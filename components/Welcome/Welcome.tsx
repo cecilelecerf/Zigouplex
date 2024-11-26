@@ -1,13 +1,13 @@
-import { Anchor, Text, Title } from '@mantine/core';
+import { Anchor, Button, Center, Text, Title } from '@mantine/core';
 import classes from './Welcome.module.css';
 
-export function Welcome() {
+export const Welcome = () => {
   return (
     <>
       <Title className={classes.title} ta="center" mt={100}>
         Welcome to{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          Zigouplex
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
@@ -18,6 +18,9 @@ export function Welcome() {
         </Anchor>
         . To get started edit page.tsx file.
       </Text>
+      <Center mt="md">
+        <Button color="orange">LALA</Button>
+      </Center>
     </>
   );
-}
+};
