@@ -15,7 +15,7 @@ export const Nav = () => {
             />
             <Flex gap="md">
                 <NavA label="Shop" page={page} path="catalog" />
-                <NavA label="Blog" page={page} path="lala" />
+                <NavA label="Blog" page={page} path="blog" />
 
             </Flex>
         </Flex>

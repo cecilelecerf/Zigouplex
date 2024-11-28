@@ -11,12 +11,7 @@ export const Welcome = () => {
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit page.tsx file.
+        Bienvenue chez Zigouplex, le médicament naturel contre les troubles d’érection. Notre gamme de produits est conçue pour vous redonner confiance et vitalité.
       </Text>
       <Center mt="md">
         <Button color="orange">LALA</Button>

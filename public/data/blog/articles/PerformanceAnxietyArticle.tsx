@@ -3,6 +3,7 @@ import MonImage from '@/app/assets/image.png';
 import { Article } from '../topics';
 
 export const PerformanceAnxietyArticle: Article = {
+  id: 0,
   name: 'L’anxiété de performance',
   picture: MonImage,
   description: `Dans l’intimité, les doutes et les peurs peuvent parfois s’inviter sans prévenir,

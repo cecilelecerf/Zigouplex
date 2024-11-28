@@ -26,7 +26,7 @@ export default function HomePage() {
       </Blockquote>
 
       <Space h={75} />
-      <LayoutArticle article={blog[0].articles[0]} />
+      <LayoutArticle article={blog["sante-mentale"].articles[0]} />
       <Space h={150} />
       <LayoutTestimonial />
       <ColorSchemeToggle />

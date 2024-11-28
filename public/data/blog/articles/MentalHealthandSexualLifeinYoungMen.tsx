@@ -3,6 +3,7 @@ import MonImage from '@/app/assets/image.png';
 import { Article } from '../topics';
 
 export const MentalHealthandSexualLifeinYoungMen: Article = {
+  id: 1,
   name: 'Santé Mentale et Vie Sexuelle chez les Jeunes Hommes : Un Lien Trop Souvent Ignoré',
   description: `Dans l’intimité, les doutes et les peurs peuvent parfois s’inviter sans prévenir,
         transformant un moment censé être de plaisir et de connexion en une source de stress

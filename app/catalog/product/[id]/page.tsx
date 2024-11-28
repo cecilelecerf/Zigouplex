@@ -1,12 +1,10 @@
 'use client';
 // Marque le fichier comme un composant client
 import NextImage from 'next/image';
-import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Avatar, Box, Card, Flex, Group, Image, List, ListItem, Pagination, Pill, Popover, PopoverDropdown, PopoverTarget, Rating, SimpleGrid, Space, Stack, Text, Title } from '@mantine/core';
+import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Avatar, Card, Flex, Group, Image, List, ListItem, Pill, Popover, PopoverDropdown, PopoverTarget, Rating, Space, Stack, Text, Title } from '@mantine/core';
 import { products } from '@/public/data/product';
 import { useParams } from 'next/navigation';
-import { useState } from 'react';
 import { testimonials } from '@/public/data/testimonials';
-import { randomId } from '@mantine/hooks';
 
 export default function Product() {
   const params = useParams();
@@ -81,7 +79,6 @@ export default function Product() {
           {testimonials[Number(product.id)].map((testimonial, i) =>
             <Card key={i} shadow="md" maw={500}>
               <Group justify='space-between' mb="sm">
-
                 <Flex align="center" gap="md">
                   <Avatar />
                   <Text>{testimonial.name} <Text span c="gray" fs="italic">- {testimonial.age} ans - {testimonial.city}</Text> </Text>

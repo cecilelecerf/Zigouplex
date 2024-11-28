@@ -4,19 +4,21 @@ import { MentalHealthandSexualLifeinYoungMen } from './articles/MentalHealthandS
 import { PerformanceAnxietyArticle } from './articles/PerformanceAnxietyArticle';
 
 export interface Article {
+  id : number
   name: string;
   description: string;
   content: ReactNode;
   picture: StaticImageData;
 }
 interface Blog {
-  theme: string;
+  topic: string;
   articles: Article[];
 }
 
-export const blog: Blog[] = [
-  {
-    theme: 'Santé mentale',
+export const blog: Record<string, Blog> = {
+  "sante-mentale" :{ 
+    topic: 'Santé mentale',
     articles: [PerformanceAnxietyArticle, MentalHealthandSexualLifeinYoungMen],
   },
-];
+
+}
