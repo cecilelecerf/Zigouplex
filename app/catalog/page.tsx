@@ -1,8 +1,9 @@
 import NextImage from 'next/image';
+import Link from 'next/link';
 import { Box, Card, CardSection, Image, SimpleGrid, Space, Text, Title } from '@mantine/core';
 import { boxs, products } from '@/public/data/product';
 
-export default function Blog() {
+export default function Catalog() {
   return (
     <Box mx="xl">
       <Title ta="center" my={100}>
@@ -15,18 +16,20 @@ export default function Blog() {
         <Title order={2}>Tous les zigouplex</Title>
         <SimpleGrid cols={3} mt="xl">
           {products.map((product) => (
-            <Card
-              w="100%"
-              style={{ overflow: 'hidden', justifyContent: 'space-around' }}
-              shadow="sm"
-            >
-              <CardSection>
-                <Image src={product.cover} component={NextImage} alt="lala" h={200} />
-              </CardSection>
-              <Text ta="center" fw="bold" mt="md">
-                {product.name}
-              </Text>
-            </Card>
+            <Link href={`/catalog/product/${product.id}`}>
+              <Card
+                w="100%"
+                style={{ overflow: 'hidden', justifyContent: 'space-around' }}
+                shadow="sm"
+              >
+                <CardSection>
+                  <Image src={product.cover} component={NextImage} alt="lala" h={200} />
+                </CardSection>
+                <Text ta="center" fw="bold" mt="md">
+                  {product.name}
+                </Text>
+              </Card>
+            </Link>
           ))}
         </SimpleGrid>
       </Box>

@@ -1,4 +1,5 @@
 import NextImage from 'next/image';
+import Link from 'next/link';
 import {
   Box,
   Button,
@@ -23,10 +24,12 @@ export const LayoutProduct = () => (
           <CardProduct title={value.name} txt={value.description} key={index} />
         ))}
     </Flex>
-    <Button color="orange" w="fit-content">
-      {' '}
-      Découvrir + de produit {'->'}
-    </Button>
+    <Link href="/products">
+      <Button color="orange" w="fit-content">
+        {' '}
+        Découvrir + de produit {'->'}
+      </Button>
+    </Link>
   </Stack>
 );
 const CardProduct = ({ title, txt }: CardProps & { title: string; txt: string }) => (

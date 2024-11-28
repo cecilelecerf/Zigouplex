@@ -5,6 +5,8 @@ const config = {
   trailingComma: 'es5',
   plugins: ['@ianvs/prettier-plugin-sort-imports'],
   importOrder: [
+    // Utiliser une "notion" d'import vide qui force la première ligne à être traitée avant
+    '^(use client)$',
     '.*styles.css$',
     '',
     'dayjs',

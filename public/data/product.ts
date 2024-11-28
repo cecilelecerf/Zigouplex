@@ -2,16 +2,15 @@ import { StaticImageData } from 'next/image';
 import MonImage from '@/app/assets/image.png';
 
 interface Product {
+  id: string;
   cover: StaticImageData;
   name: string;
   theme: string;
   description: string;
-  keyComposition?: KeyComposition[];
-  usage?: Usage;
+  keyComposition: KeyComposition[];
   keyAdvantages?: string[];
   packaging?: string;
   slogan: string;
-  targetAudience?: string;
   keyPoints?: string[];
 }
 
@@ -25,93 +24,6 @@ interface Usage {
   punctualEffect: string;
 }
 
-export const products: Product[] = [
-  {
-    name: 'Zigouplex Classique',
-    cover: MonImage,
-    theme: 'La formule essentielle pour retrouver confiance et performance',
-    description:
-      'Zigouplex Classique est la version phare du produit, conçue pour offrir une solution fiable et efficace aux troubles érectiles. Présentée sous forme de comprimés ou de gélules, cette formule associe des ingrédients naturels et scientifiquement validés pour soutenir la circulation sanguine, stimuler la vitalité et améliorer les performances masculines, naturellement.',
-    keyComposition: [
-      {
-        ingredient: 'L-arginine',
-        benefit:
-          'Favorise la production de monoxyde d’azote pour améliorer la circulation sanguine.',
-      },
-      {
-        ingredient: 'Extrait de Ginseng',
-        benefit: 'Reconnu pour ses propriétés revitalisantes et aphrodisiaques.',
-      },
-      {
-        ingredient: 'Maca Péruvienne',
-        benefit: 'Améliore l’endurance et stimule la libido.',
-      },
-      {
-        ingredient: 'Zinc',
-        benefit: 'Essentiel à la production de testostérone pour un meilleur équilibre hormonal.',
-      },
-    ],
-    usage: {
-      cure: 'Prendre 1 à 2 comprimés par jour avec un grand verre d’eau, idéalement au cours d’un repas, pour des résultats durables.',
-      punctualEffect: 'Prendre une dose 1 à 2 heures avant l’acte pour un effet boost immédiat.',
-    },
-    keyAdvantages: [
-      'Action progressive pour des effets durables sur le long terme.',
-      'Soutient la vitalité globale, au-delà de la performance sexuelle.',
-      'Sans hormones ni effets secondaires majeurs, avec une formule naturelle et sécurisée.',
-    ],
-    packaging:
-      'Disponible en boîtes de 30 comprimés (1 mois de cure) ou 10 comprimés pour une utilisation ponctuelle.',
-    slogan: 'Zigouplex Classique : l’assurance d’être à la hauteur, naturellement.',
-    targetAudience:
-      'Tous les hommes en quête de confiance et de performances régulières, qu’ils souhaitent résoudre un trouble ponctuel ou améliorer leur vitalité globale.',
-  },
-  {
-    name: 'Zigouplex Nightshot',
-    cover: MonImage,
-    theme: 'Solution instantanée et discrète pour les moments imprévus',
-    description:
-      'Une version sous forme de stick liquide (ou ampoule à boire) pour une absorption ultra-rapide et un effet en quelques minutes. Idéal pour des rendez-vous spontanés ou des moments où le timing est essentiel.',
-    keyPoints: [
-      'Conditionnement pratique et discret : glisse dans une poche ou un portefeuille.',
-      'Parfum mentholé ou agrumes pour une consommation agréable.',
-      'Efficacité boostée pour une montée en puissance rapide.',
-    ],
-    slogan: 'Zigouplex Nightshot : prêt quand vous l’êtes.',
-  },
-
-  {
-    name: 'Zigouplex Endurance Gel',
-    cover: MonImage,
-    theme: 'Optimisation locale pour une performance maîtrisée',
-    description:
-      'Une déclinaison sous forme de gel topique à appliquer directement avant l’acte. Ce produit agit localement pour stimuler la circulation sanguine et améliorer l’endurance tout en offrant des sensations amplifiées.',
-    keyPoints: [
-      'Action ciblée et rapide.',
-      'Effet légèrement chauffant ou rafraîchissant pour intensifier les sensations.',
-      'Compatible avec les lubrifiants classiques et les préservatifs.',
-    ],
-    slogan: 'Zigouplex Endurance Gel : à portée de main, pour des résultats à portée de cœur.',
-  },
-  {
-    name: 'Zigouplex Infinity Gummies',
-    cover: MonImage,
-    theme: 'Une cure fun et gourmande pour des résultats progressifs',
-    description:
-      'Une version sous forme de gummies (bonbons gélifiés) enrichis en ingrédients naturels tels que le ginseng, le maca et la L-arginine, pour une prise quotidienne ludique et sans contrainte. Pensé pour les hommes qui préfèrent une approche légère et progressive.',
-    keyPoints: [
-      'Saveurs agréables (citron, grenade, fruits rouges).',
-      'Sans sucres ajoutés, avec des vitamines pour un boost général.',
-      "Facile à intégrer dans la routine quotidienne sans rappeler un 'traitement'.",
-    ],
-    slogan: 'Zigouplex Infinity : la puissance n’a jamais été aussi douce.',
-  },
-];
-
-interface Product {
-  name: string;
-  description: string;
-}
 
 interface BoxContent {
   name: string;
@@ -119,9 +31,10 @@ interface BoxContent {
 }
 
 interface Box {
+  id: string;
   name: string;
   cover: StaticImageData;
-  positionnement: string;
+  description: string;
   contenu: BoxContent[];
   publicCible: string;
   slogan?: string;
@@ -129,10 +42,11 @@ interface Box {
 
 export const boxs: Box[] = [
   {
+    id: '0',
     name: 'Zigouplex Boost Box',
     cover: MonImage,
 
-    positionnement: 'Une box pour un coup de fouet instantané et une performance optimisée.',
+    description: 'Une box pour un coup de fouet instantané et une performance optimisée.',
     contenu: [
       {
         name: 'Zigouplex Instant Shot',
@@ -154,10 +68,11 @@ export const boxs: Box[] = [
   },
 
   {
+    id: '1',
     name: 'Zigouplex Performance Plus',
     cover: MonImage,
 
-    positionnement: 'Une version avancée pour des performances maximales sur le long terme.',
+    description: 'Une version avancée pour des performances maximales sur le long terme.',
     contenu: [
       {
         name: 'Zigoulex Prolong',
@@ -176,10 +91,11 @@ export const boxs: Box[] = [
   },
 
   {
+    id: '2',
     name: 'Zigouplex Sensation Box (pour le couple)',
     cover: MonImage,
 
-    positionnement: 'Une box axée sur le plaisir partagé et la redécouverte de l’intimité en duo.',
+    description: 'Une box axée sur le plaisir partagé et la redécouverte de l’intimité en duo.',
     contenu: [
       {
         name: 'Zigouplex Classic',
@@ -201,10 +117,11 @@ export const boxs: Box[] = [
   },
 
   {
+    id: '3',
     name: 'Zigouplex Valentine Box',
     cover: MonImage,
 
-    positionnement:
+    description:
       'Une box romantique et sensuelle pour célébrer l’amour, raviver la passion et renforcer l’intimité du couple. Idéale pour la Saint-Valentin, elle allie performance et plaisir dans une expérience tout-en-un.',
     contenu: [
       {
@@ -239,3 +156,91 @@ export const boxs: Box[] = [
       'Zigouplex Valentine Box : Offrez à votre amour une Saint-Valentin pleine de passion et de complicité.',
   },
 ];
+export const products: Product[] = [
+  {
+    id: '0',
+    name: 'Zigouplex Classique',
+    cover: MonImage,
+    theme: 'La formule essentielle pour retrouver confiance et performance',
+    description:
+      'Zigouplex Classique est la version phare du produit, conçue pour offrir une solution fiable et efficace aux troubles érectiles. Présentée sous forme de comprimés ou de gélules, cette formule associe des ingrédients naturels et scientifiquement validés pour soutenir la circulation sanguine, stimuler la vitalité et améliorer les performances masculines, naturellement.',
+    keyComposition: [
+      {
+        ingredient: 'L-arginine',
+        benefit:
+          'Favorise la production de monoxyde d’azote pour améliorer la circulation sanguine.',
+      },
+      {
+        ingredient: 'Extrait de Ginseng',
+        benefit: 'Reconnu pour ses propriétés revitalisantes et aphrodisiaques.',
+      },
+      {
+        ingredient: 'Maca Péruvienne',
+        benefit: 'Améliore l’endurance et stimule la libido.',
+      },
+      {
+        ingredient: 'Zinc',
+        benefit: 'Essentiel à la production de testostérone pour un meilleur équilibre hormonal.',
+      },
+    ],
+ 
+    keyAdvantages: [
+      'Action progressive pour des effets durables sur le long terme.',
+      'Soutient la vitalité globale, au-delà de la performance sexuelle.',
+      'Sans hormones ni effets secondaires majeurs, avec une formule naturelle et sécurisée.',
+    ],
+    packaging:
+      'Disponible en boîtes de 30 comprimés (1 mois de cure) ou 10 comprimés pour une utilisation ponctuelle.',
+    slogan: 'Zigouplex Classique : l’assurance d’être à la hauteur, naturellement.',
+  },
+  {
+    id: '1',
+    name: 'Zigouplex Nightshot',
+    cover: MonImage,
+    theme: 'Solution instantanée et discrète pour les moments imprévus',
+    description:
+      'Une version sous forme de stick liquide (ou ampoule à boire) pour une absorption ultra-rapide et un effet en quelques minutes. Idéal pour des rendez-vous spontanés ou des moments où le timing est essentiel.',
+    keyPoints: [
+      'Conditionnement pratique et discret : glisse dans une poche ou un portefeuille.',
+      'Parfum mentholé ou agrumes pour une consommation agréable.',
+      'Efficacité boostée pour une montée en puissance rapide.',
+    ],
+    slogan: 'Zigouplex Nightshot : prêt quand vous l’êtes.',
+    keyComposition: []
+  },
+
+  {
+    id: '2',
+    name: 'Zigouplex Endurance Gel',
+    cover: MonImage,
+    theme: 'Optimisation locale pour une performance maîtrisée',
+    description:
+      'Une déclinaison sous forme de gel topique à appliquer directement avant l’acte. Ce produit agit localement pour stimuler la circulation sanguine et améliorer l’endurance tout en offrant des sensations amplifiées.',
+    keyPoints: [
+      'Action ciblée et rapide.',
+      'Effet légèrement chauffant ou rafraîchissant pour intensifier les sensations.',
+      'Compatible avec les lubrifiants classiques et les préservatifs.',
+    ],
+    slogan: 'Zigouplex Endurance Gel : à portée de main, pour des résultats à portée de cœur.',
+    keyComposition: []
+
+  },
+  {
+    id: '3',
+    name: 'Zigouplex Infinity Gummies',
+    cover: MonImage,
+    theme: 'Une cure fun et gourmande pour des résultats progressifs',
+    description:
+      'Une version sous forme de gummies (bonbons gélifiés) enrichis en ingrédients naturels tels que le ginseng, le maca et la L-arginine, pour une prise quotidienne ludique et sans contrainte. Pensé pour les hommes qui préfèrent une approche légère et progressive.',
+    keyPoints: [
+      'Saveurs agréables (citron, grenade, fruits rouges).',
+      'Sans sucres ajoutés, avec des vitamines pour un boost général.',
+      "Facile à intégrer dans la routine quotidienne sans rappeler un 'traitement'.",
+    ],
+    slogan: 'Zigouplex Infinity : la puissance n’a jamais été aussi douce.',
+    keyComposition: []
+
+  },
+];
+
+ 
