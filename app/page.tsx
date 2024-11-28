@@ -1,8 +1,9 @@
 import { IconSpeakerphone } from '@tabler/icons-react';
 import { Blockquote, Box, Space } from '@mantine/core';
-import { LayoutArticle } from '@/components/LayoutArticle';
-import { PeopleThink } from '@/components/LayoutPeopleThink';
-import { LayoutProduct } from '@/components/LayoutProduct';
+import { LayoutArticle } from '@/components/Home/LayoutArticle';
+import { LayoutProduct } from '@/components/Home/LayoutProduct';
+import { LayoutTestimonial } from '@/components/Home/LayoutTestimonial';
+import { blog } from '@/public/data/blog/topics';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
 
@@ -13,14 +14,21 @@ export default function HomePage() {
       <Space h={150} />
       <LayoutProduct />
       <Space h={75} />
-      <Blockquote cite="l'auteur" color="orange" icon={<IconSpeakerphone />}>
-        La citatation Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      <Blockquote
+        cite="Dr. Jean-Luc Besson, Médecin spécialiste en urologie"
+        color="orange"
+        icon={<IconSpeakerphone />}
+      >
+        En tant que médecin spécialisé dans les troubles érectiles, je recommande Zigouplex pour son
+        approche naturelle et sa formulation soigneusement étudiée. Les ingrédients tels que la
+        L-arginine, le ginseng et le maca ont prouvé leur efficacité pour améliorer la circulation
+        sanguine et soutenir la vitalité masculine, sans effets secondaires notables.{' '}
       </Blockquote>
 
       <Space h={75} />
-      <LayoutArticle />
+      <LayoutArticle article={blog[0].articles[0]} />
       <Space h={150} />
-      <PeopleThink />
+      <LayoutTestimonial />
       <ColorSchemeToggle />
     </Box>
   );

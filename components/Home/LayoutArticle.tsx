@@ -1,8 +1,8 @@
 import NextImage from 'next/image';
 import { Box, Card, Image, Text, Title } from '@mantine/core';
-import MonImage from '@/app/assets/image.png';
+import { Article } from '@/public/data/blog/topics';
 
-export const LayoutArticle = () => (
+export const LayoutArticle = ({ article }: { article: Article }) => (
   <section>
     <Card
       w="100%"
@@ -12,7 +12,7 @@ export const LayoutArticle = () => (
       shadow="sm"
     >
       <Image
-        src={MonImage}
+        src={article.picture}
         component={NextImage}
         alt="lala"
         maw={400}
@@ -22,11 +22,8 @@ export const LayoutArticle = () => (
       />
 
       <Box>
-        <Title order={2}>article sur...</Title>
-        <Text>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
-        </Text>
+        <Title order={2}>{article.name}</Title>
+        <Text>{article.description}</Text>
       </Box>
     </Card>
   </section>
