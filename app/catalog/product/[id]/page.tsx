@@ -1,19 +1,41 @@
 'use client';
 // Marque le fichier comme un composant client
 import NextImage from 'next/image';
-import { Badge, Box, Card, CardSection, Flex, Group, Image, Pill, Popover, PopoverDropdown, PopoverTarget, SimpleGrid, Space, Stack, Text, Title } from '@mantine/core';
+import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Avatar, Box, Card, Flex, Group, Image, List, ListItem, Pagination, Pill, Popover, PopoverDropdown, PopoverTarget, Rating, SimpleGrid, Space, Stack, Text, Title } from '@mantine/core';
 import { products } from '@/public/data/product';
 import { useParams } from 'next/navigation';
+import { useState } from 'react';
+import { testimonials } from '@/public/data/testimonials';
+import { randomId } from '@mantine/hooks';
 
 export default function Product() {
   const params = useParams();
-  const { id } = params; // 'id' correspond au nom du paramètre dynamique dans l'URL
+  const { id } = params;
+
 
   if (id && typeof id === "string") {
     const product = products[Number(id)]
-    console.log(product);
+
+    const dataAccordion = [
+      {
+        value: "Avantages",
+        description: <List>{product.keyAdvantages?.map((keyAdvantages, i) => <ListItem key={i}>{keyAdvantages}</ListItem>)}</List>
+      },
+      {
+        value: "Packaging",
+        description: <Text>{product.packaging}</Text>
+      },
+      {
+        value: "Informations",
+        description: <List>{product.keyPoints?.map((keyPoints, i) => <ListItem key={i}>{keyPoints}</ListItem>)}</List>
+      },
+      {
+        value: "Thème",
+        description: <Text>{product.theme}</Text>
+      }
+    ]
     return (
-      <Box mx="xl">
+      <  >
         <Title ta="center" my={100}>
           <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
             {product.name}
@@ -41,12 +63,43 @@ export default function Product() {
             )}
           </Stack>
         </Group>
+        <Space h="xl" />
+        <Accordion >
+          {dataAccordion.map((data, i) =>
+            <AccordionItem key={i} value={data.value}>
+              <AccordionControl>
+                {data.value}
+              </AccordionControl>
+              <AccordionPanel>
+                {data.description}
+              </AccordionPanel>
+            </AccordionItem>
+          )}
+        </Accordion>
+        <Space h={75} />
+        <Group justify="center" >
+          {testimonials[Number(product.id)].map((testimonial, i) =>
+            <Card key={i} shadow="md" maw={500}>
+              <Group justify='space-between' mb="sm">
 
+                <Flex align="center" gap="md">
+                  <Avatar />
+                  <Text>{testimonial.name} <Text span c="gray" fs="italic">- {testimonial.age} ans - {testimonial.city}</Text> </Text>
+                </Flex>
+                <Rating defaultValue={testimonial.rating} />
+              </Group>
+              <Text>
+                {testimonial.feedback}
+              </Text>
+            </Card>
+          )}
+        </Group>
 
-      </Box>
+      </  >
+
     );
   }
   else {
-    return (<>Erro</>)
+    return (<>Error</>)
   }
 }

@@ -5,7 +5,7 @@ import { boxs, products } from '@/public/data/product';
 
 export default function Catalog() {
   return (
-    <Box mx="xl">
+    <>
       <Title ta="center" my={100}>
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
           Les produits Zigouplex
@@ -15,8 +15,8 @@ export default function Catalog() {
       <Box>
         <Title order={2}>Tous les zigouplex</Title>
         <SimpleGrid cols={3} mt="xl">
-          {products.map((product) => (
-            <Link href={`/catalog/product/${product.id}`}>
+          {products.map((product, i) => (
+            <Link href={`/catalog/product/${product.id}`} key={i} style={{ textDecoration: "none" }}>
               <Card
                 w="100%"
                 style={{ overflow: 'hidden', justifyContent: 'space-around' }}
@@ -37,17 +37,20 @@ export default function Catalog() {
 
       <Title order={2}>Les box</Title>
       <SimpleGrid cols={3} mt="xl">
-        {boxs.map((box) => (
-          <Card w="100%" style={{ overflow: 'hidden', justifyContent: 'space-around' }} shadow="sm">
-            <CardSection>
-              <Image src={box.cover} component={NextImage} alt="lala" h={200} />
-            </CardSection>
-            <Text ta="center" fw="bold" mt="md">
-              {box.name}
-            </Text>
-          </Card>
+        {boxs.map((box, i) => (
+          <Link href={`/catalog/box/${box.id}`} key={i} style={{ textDecoration: "none" }}>
+
+            <Card w="100%" style={{ overflow: 'hidden', justifyContent: 'space-around' }} shadow="sm">
+              <CardSection>
+                <Image src={box.cover} component={NextImage} alt="lala" h={200} />
+              </CardSection>
+              <Text ta="center" fw="bold" mt="md">
+                {box.name}
+              </Text>
+            </Card>
+          </Link>
         ))}
       </SimpleGrid>
-    </Box>
+    </>
   );
 }

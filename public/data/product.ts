@@ -8,10 +8,10 @@ interface Product {
   theme: string;
   description: string;
   keyComposition: KeyComposition[];
-  keyAdvantages?: string[];
-  packaging?: string;
+  keyAdvantages: string[];
+  packaging: string;
   slogan: string;
-  keyPoints?: string[];
+  keyPoints: string[];
 }
 
 interface KeyComposition {
@@ -36,8 +36,7 @@ interface Box {
   cover: StaticImageData;
   description: string;
   contenu: BoxContent[];
-  publicCible: string;
-  slogan?: string;
+   slogan: string;
 }
 
 export const boxs: Box[] = [
@@ -63,7 +62,7 @@ export const boxs: Box[] = [
         description: 'Enrichi en actifs chauffants pour stimuler encore plus les sensations.',
       },
     ],
-    publicCible:
+    slogan:
       'Les hommes qui veulent une solution rapide pour des performances imprévues et exceptionnelles.',
   },
 
@@ -85,10 +84,9 @@ export const boxs: Box[] = [
           'À appliquer localement pour un effet stimulant direct et une optimisation de la circulation sanguine.',
       },
     ],
-    publicCible:
+    slogan:
       'Les hommes engagés dans une approche proactive pour booster leur confiance et leur bien-être sexuel.',
-    slogan: 'Zigouplex Performance Plus : pour des performances maximales sur le long terme.',
-  },
+   },
 
   {
     id: '2',
@@ -112,7 +110,7 @@ export const boxs: Box[] = [
           'Un jeu de cartes contenant des idées de scénarios et de jeux coquins pour briser la routine.',
       },
     ],
-    publicCible:
+    slogan:
       'Les couples qui souhaitent raviver la flamme et renforcer leur complicité tout en profitant des bienfaits de Zigoulex.',
   },
 
@@ -150,13 +148,10 @@ export const boxs: Box[] = [
           'Un jeu de cartes à thème romantique et sensuel, avec des idées de jeux coquins, des défis sexy, et des scénarios à réaliser ensemble pour pimenter la soirée et explorer de nouvelles facettes de votre complicité.',
       },
     ],
-    publicCible:
-      "Les couples qui souhaitent célébrer la Saint-Valentin avec un cadeau à la fois romantique et sensuel. Idéal pour raviver la passion, renforcer l'intimité et partager des moments inoubliables ensemble.",
     slogan:
-      'Zigouplex Valentine Box : Offrez à votre amour une Saint-Valentin pleine de passion et de complicité.',
-  },
-];
-export const products: Product[] = [
+      "Les couples qui souhaitent célébrer la Saint-Valentin avec un cadeau à la fois romantique et sensuel. Idéal pour raviver la passion, renforcer l'intimité et partager des moments inoubliables ensemble.",
+},
+];export const products: Product[] = [
   {
     id: '0',
     name: 'Zigouplex Classique',
@@ -183,7 +178,11 @@ export const products: Product[] = [
         benefit: 'Essentiel à la production de testostérone pour un meilleur équilibre hormonal.',
       },
     ],
- 
+    keyPoints: [
+      'Formule testée cliniquement pour garantir des résultats optimaux.',
+      'Adaptée à un usage quotidien sans effets secondaires indésirables.',
+      'Convient à tous les âges pour un soutien global de la vitalité masculine.',
+    ],
     keyAdvantages: [
       'Action progressive pour des effets durables sur le long terme.',
       'Soutient la vitalité globale, au-delà de la performance sexuelle.',
@@ -205,10 +204,29 @@ export const products: Product[] = [
       'Parfum mentholé ou agrumes pour une consommation agréable.',
       'Efficacité boostée pour une montée en puissance rapide.',
     ],
+    keyAdvantages: [
+      'Effet rapide pour les situations imprévues.',
+      'Facile à transporter et discret à consommer.',
+      'Formule concentrée pour une absorption optimale.',
+    ],
+    packaging: 'Disponible en boîte de 5 ou 10 sticks individuels.',
     slogan: 'Zigouplex Nightshot : prêt quand vous l’êtes.',
-    keyComposition: []
+    keyComposition: [
+      {
+        ingredient: 'Extrait de Gingembre',
+        benefit: 'Stimule la circulation sanguine et améliore les performances.',
+      },
+      {
+        ingredient: 'Caféine',
+        benefit: 'Apporte un boost d’énergie immédiat.',
+      },
+      {
+        ingredient: 'L-arginine',
+        benefit:
+          'Favorise la production de monoxyde d’azote pour des effets rapides sur la circulation.',
+      },
+    ],
   },
-
   {
     id: '2',
     name: 'Zigouplex Endurance Gel',
@@ -221,9 +239,27 @@ export const products: Product[] = [
       'Effet légèrement chauffant ou rafraîchissant pour intensifier les sensations.',
       'Compatible avec les lubrifiants classiques et les préservatifs.',
     ],
+    keyAdvantages: [
+      'Application locale pour des résultats immédiats.',
+      'Convient aux peaux sensibles, sans risque d’irritation.',
+      'Effet amplificateur pour une expérience inoubliable.',
+    ],
+    packaging: 'Tube de 50 ml, facile à utiliser et à transporter.',
     slogan: 'Zigouplex Endurance Gel : à portée de main, pour des résultats à portée de cœur.',
-    keyComposition: []
-
+    keyComposition: [
+      {
+        ingredient: 'Menthol',
+        benefit: 'Apporte un effet rafraîchissant pour intensifier les sensations.',
+      },
+      {
+        ingredient: 'Capsaïcine',
+        benefit: 'Effet chauffant pour une meilleure stimulation locale.',
+      },
+      {
+        ingredient: 'Extrait d’Aloe Vera',
+        benefit: 'Hydrate et protège la peau lors de l’utilisation.',
+      },
+    ],
   },
   {
     id: '3',
@@ -237,10 +273,26 @@ export const products: Product[] = [
       'Sans sucres ajoutés, avec des vitamines pour un boost général.',
       "Facile à intégrer dans la routine quotidienne sans rappeler un 'traitement'.",
     ],
+    keyAdvantages: [
+      'Un format ludique pour une prise quotidienne agréable.',
+      'Convient aux personnes préférant éviter les comprimés ou gélules.',
+      'Apporte une énergie globale grâce aux vitamines et minéraux.',
+    ],
+    packaging: 'Boîte de 30 gummies (1 mois de cure).',
     slogan: 'Zigouplex Infinity : la puissance n’a jamais été aussi douce.',
-    keyComposition: []
-
+    keyComposition: [
+      {
+        ingredient: 'Ginseng',
+        benefit: 'Stimule la vitalité et améliore les performances physiques.',
+      },
+      {
+        ingredient: 'Maca Péruvienne',
+        benefit: 'Soutient la libido et augmente l’endurance.',
+      },
+      {
+        ingredient: 'Vitamine B12',
+        benefit: 'Booste l’énergie et réduit la fatigue.',
+      },
+    ],
   },
 ];
-
- 

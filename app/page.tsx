@@ -9,7 +9,7 @@ import { Welcome } from '../components/Welcome/Welcome';
 
 export default function HomePage() {
   return (
-    <Box mx="xl">
+    <>
       <Welcome />
       <Space h={150} />
       <LayoutProduct />
@@ -30,6 +30,7 @@ export default function HomePage() {
       <Space h={150} />
       <LayoutTestimonial />
       <ColorSchemeToggle />
-    </Box>
+    </>
+
   );
 }

@@ -7,15 +7,10 @@ export type Testimonial = {
   rating: number; // Note sur 5
 };
 
-type ProductTestimonials = {
-  ZigouplexClassique: Testimonial[];
-  ZigouplexNightshot: Testimonial[];
-  ZigouplexEnduranceGel: Testimonial[];
-  ZigouplexInfinityGummies: Testimonial[];
-};
+ 
 
-export const testimonials: ProductTestimonials = {
-  ZigouplexClassique: [
+export const testimonials: Testimonial[][] = [
+[
     {
       id: '1',
       name: 'Jean-Marc',
@@ -108,7 +103,7 @@ export const testimonials: ProductTestimonials = {
     },
   ],
 
-  ZigouplexNightshot: [
+   [
     {
       id: '11',
       name: 'Maxime',
@@ -201,7 +196,7 @@ export const testimonials: ProductTestimonials = {
     },
   ],
 
-  ZigouplexEnduranceGel: [
+   [
     {
       id: '21',
       name: 'Marc',
@@ -249,7 +244,7 @@ export const testimonials: ProductTestimonials = {
     },
   ],
 
-  ZigouplexInfinityGummies: [
+   [
     {
       id: '26',
       name: 'Alexandre',
@@ -296,4 +291,4 @@ export const testimonials: ProductTestimonials = {
       rating: 4,
     },
   ],
-};
+]

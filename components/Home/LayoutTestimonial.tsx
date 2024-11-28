@@ -7,7 +7,7 @@ export const LayoutTestimonial = () => (
       Ce qu'ils pensent de nous
     </Title>
     <Flex gap="md">
-      {testimonials.ZigouplexClassique.slice(0, 3).map((testimonial, i) => (
+      {testimonials[0].slice(0, 3).map((testimonial, i) => (
         <CardPeople testimonial={testimonial} key={i} />
       ))}
     </Flex>
