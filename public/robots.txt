@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.zigouplex.shop
+
+# Sitemaps
+Sitemap: https://www.zigouplex.shop/sitemap.xml
