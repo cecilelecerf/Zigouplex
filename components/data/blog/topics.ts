@@ -1,9 +1,5 @@
 import { ReactNode } from 'react';
 import { StaticImageData } from 'next/image';
-<<<<<<< Updated upstream:public/data/blog/topics.ts
-import { MentalHealthandSexualLifeinYoungMen } from './articles/MentalHealthandSexualLifeinYoungMen';
-import { PerformanceAnxietyArticle } from './articles/PerformanceAnxietyArticle';
-=======
 import { RekindleFlameCouple } from './articles/couple/RekindleFlameCouple';
 import { TroublesErectiles } from './articles/couple/TroublesErectiles';
 import { DepressionAndLibido } from './articles/mentalHealth/DepressionAndLibido';
@@ -11,10 +7,9 @@ import { MentalHealthandSexualLifeinYoungMen } from './articles/mentalHealth/Men
 import { MentalHealthSexualityArticle } from './articles/mentalHealth/MentalHealthSexualityArticle';
 import { StressErectionArticle } from './articles/mentalHealth/StressErectionArticle';
 import { ImpactAlimentationSexuelle } from './articles/sexualHealth/ImpactAlimentationSexuelle';
->>>>>>> Stashed changes:components/data/blog/topics.ts
 
 export interface Article {
-  id : number
+  id: number;
   name: string;
   description: ReactNode;
   content: ReactNode;
@@ -26,14 +21,9 @@ interface Blog {
 }
 
 export const blog: Record<string, Blog> = {
-  "sante-mentale" :{ 
+  'sante-mentale': {
     topic: 'Santé mentale',
-<<<<<<< Updated upstream:public/data/blog/topics.ts
-    articles: [PerformanceAnxietyArticle, MentalHealthandSexualLifeinYoungMen],
-  },
 
-}
-=======
     articles: [
       MentalHealthSexualityArticle,
       MentalHealthandSexualLifeinYoungMen,
@@ -50,4 +40,3 @@ export const blog: Record<string, Blog> = {
     articles: [TroublesErectiles, ImpactAlimentationSexuelle],
   },
 };
->>>>>>> Stashed changes:components/data/blog/topics.ts

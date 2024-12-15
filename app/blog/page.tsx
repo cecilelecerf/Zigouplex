@@ -1,10 +1,8 @@
-<<<<<<< Updated upstream
-import { blog } from "@/public/data/blog/topics";
-import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Box, Card, CardSection, Image, SimpleGrid, Text, Title } from "@mantine/core";
-=======
+
+
 import { blog } from "../../components/data/blog/topics";
 import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Box, Card, CardSection, Group, Image, SimpleGrid, Text, Title } from "@mantine/core";
->>>>>>> Stashed changes
+
 import NextImage from 'next/image';
 import Link from "next/link";
 
@@ -26,27 +24,21 @@ export default function Blog() {
                                 <Text>{value.topic}</Text>
                             </AccordionControl>
                             <AccordionPanel>
-<<<<<<< Updated upstream
-                                <SimpleGrid cols={3}>
 
-                                    {value.articles.map((article, index) =>
-                                        <Link href={`/blog/${key}/${article.id}`}>
-                                            <Card shadow="sm" key={index}>
-                                                <CardSection><Image src={article.picture} alt="lala" component={NextImage} mah={100} /></CardSection>
-                                                <Text>{article.name}</Text></Card>
-=======
+
                                 <Group  >
                                     {value.articles.map((article, index) =>
                                         <Link href={`/blog/${key}/${article.id}`} style={{ textDecoration: "none", height: "100%" }} key={index}>
                                             <Card shadow="sm" h="100%" maw={200}>
                                                 <CardSection mb="md">
                                                     <Image src={article.picture} alt="lala" component={NextImage} mah={100} loading="lazy" />
+
                                                 </CardSection>
                                                 <Text>
                                                     {article.name}
                                                 </Text>
                                             </Card>
->>>>>>> Stashed changes
+
                                         </Link>
                                     )}
                                 </Group>

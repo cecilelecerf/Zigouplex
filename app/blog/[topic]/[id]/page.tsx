@@ -3,7 +3,7 @@
 import NextImage from 'next/image';
 import { Text, Title, Image, Flex, Paper } from '@mantine/core';
 import { useParams } from 'next/navigation';
-import { blog } from '@/public/data/blog/topics';
+import { blog } from '../../../../components/data/blog//topics';
 
 export default function Product() {
     const params = useParams();
@@ -13,19 +13,7 @@ export default function Product() {
         const article = blog[topic].articles[Number(id)]
 
         return (
-<<<<<<< Updated upstream
-            <  >
 
-
-
-                <Title ta="center" my={100}>
-                    <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                        {article.name}
-                    </Text>
-                </Title>
-
-
-=======
             <>
                 <header>
                     <Title order={1} ta="center" my="lg">
@@ -42,11 +30,9 @@ export default function Product() {
                         </Flex>
                     </Paper>
                 </header>
->>>>>>> Stashed changes
+
                 {article.content}
-
-
-            </  >
+            </>
 
         );
     }

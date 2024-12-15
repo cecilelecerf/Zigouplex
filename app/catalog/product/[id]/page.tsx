@@ -2,9 +2,9 @@
 // Marque le fichier comme un composant client
 import NextImage from 'next/image';
 import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Avatar, Card, Flex, Group, Image, List, ListItem, Pill, Popover, PopoverDropdown, PopoverTarget, Rating, Space, Stack, Text, Title } from '@mantine/core';
-import { products } from '@/public/data/product';
+import { products } from '../../../../components/data/product';
 import { useParams } from 'next/navigation';
-import { testimonials } from '@/public/data/testimonials';
+import { testimonials } from '../../../../components/data/testimonials';
 
 export default function Product() {
   const params = useParams();

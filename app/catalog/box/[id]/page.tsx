@@ -1,8 +1,8 @@
 'use client';
 // Marque le fichier comme un composant client
 import NextImage from 'next/image';
-import { Badge, Box, Card, CardSection, Flex, Group, Image, Pill, Popover, PopoverDropdown, PopoverTarget, SimpleGrid, Space, Stack, Text, Title, useMantineTheme } from '@mantine/core';
-import { boxs, products } from '@/public/data/product';
+import { Box, Card, Image, SimpleGrid, Space, Stack, Text, Title, useMantineTheme } from '@mantine/core';
+import { boxs } from '../../../../components/data/product';
 import { useParams } from 'next/navigation';
 
 export default function Product() {

@@ -1,9 +1,9 @@
 import { IconSpeakerphone } from '@tabler/icons-react';
-import { Blockquote, Box, Space } from '@mantine/core';
-import { LayoutArticle } from '@/components/Home/LayoutArticle';
-import { LayoutProduct } from '@/components/Home/LayoutProduct';
-import { LayoutTestimonial } from '@/components/Home/LayoutTestimonial';
-import { blog } from '@/public/data/blog/topics';
+import { Blockquote, Space } from '@mantine/core';
+import { LayoutArticle } from '../components/Home/LayoutArticle';
+import { LayoutProduct } from '../components/Home/LayoutProduct';
+import { LayoutTestimonial } from '../components/Home/LayoutTestimonial';
+import { blog } from '../components/data/blog/topics';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
 
