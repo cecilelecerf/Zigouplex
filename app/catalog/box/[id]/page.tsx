@@ -29,7 +29,7 @@ export default function Product() {
           )}
         </Stack>
         <Space h="75" />
-        <Image src={box.cover} component={NextImage} alt='lal' style={{ borderRadius: theme.radius.md }} />
+        <Image src={box.cover} component={NextImage} alt='lal' style={{ borderRadius: theme.radius.md }} loading="lazy" />
         <Space h="75" />
         <Box>
           <Title order={2} my="md">Inclut dans la box</Title>
@@ -42,24 +42,6 @@ export default function Product() {
 
           </SimpleGrid>
         </Box>
-        {/* <Group gap="xl">
-          {/* <Image src={box.cover} component={NextImage} alt="#" maw={300} h={200} /> */}
-        {/* <Stack maw={550}>
-
-            <Text>
-              {box.description}
-            </Text> */}
-        {/* {box.keyComposition && (
-              <Group >{box.keyComposition.map((keyComposition, index) => (<Popover key={index}>
-                <PopoverTarget><Pill  >{keyComposition.ingredient}</Pill></PopoverTarget>
-                <PopoverDropdown>{keyComposition.benefit}</PopoverDropdown>
-              </Popover>))}</Group>
-
-            )} */}
-        {/* </Stack> */}
-
-
-
       </>
     );
   }

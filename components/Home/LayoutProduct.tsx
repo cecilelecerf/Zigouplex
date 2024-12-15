@@ -38,7 +38,7 @@ export const LayoutProduct = () => (
 const CardProduct = ({ title, txt }: CardProps & { title: string; txt: string }) => (
   <Card w="100%" style={{ overflow: 'hidden' }} maw={400} shadow="sm" >
     <CardSection>
-      <Image src={MonImage} component={NextImage} alt="lala" h={350} />
+      <Image src={MonImage} component={NextImage} alt="lala" h={350} loading="lazy" />
     </CardSection>
     <Box p="md" td="none">
       <Title order={2} td="none">{title}</Title>

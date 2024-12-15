@@ -23,7 +23,7 @@ export default function Catalog() {
                 shadow="sm"
               >
                 <CardSection>
-                  <Image src={product.cover} component={NextImage} alt="lala" h={200} />
+                  <Image src={product.cover} component={NextImage} alt="lala" h={200} loading="lazy" />
                 </CardSection>
                 <Text ta="center" fw="bold" mt="md">
                   {product.name}
@@ -42,7 +42,7 @@ export default function Catalog() {
 
             <Card w="100%" style={{ overflow: 'hidden', justifyContent: 'space-around' }} shadow="sm">
               <CardSection>
-                <Image src={box.cover} component={NextImage} alt="lala" h={200} />
+                <Image src={box.cover} component={NextImage} alt="lala" h={200} loading="lazy" />
               </CardSection>
               <Text ta="center" fw="bold" mt="md">
                 {box.name}

@@ -33,20 +33,23 @@ export default function Product() {
       }
     ]
     return (
-      <  >
-        <Title ta="center" my={100}>
-          <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-            {product.name}
-          </Text>
-          {product.slogan && (
-            <Text>
-              {product.slogan}
-            </Text>
+      <>
+        <header>
 
-          )}
-        </Title>
+          <Title ta="center" my={100}>
+            <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+              {product.name}
+            </Text>
+            {product.slogan && (
+              <Text>
+                {product.slogan}
+              </Text>
+
+            )}
+          </Title>
+        </header>
         <Group gap="xl">
-          <Image src={product.cover} component={NextImage} alt="#" maw={300} h={200} />
+          <Image src={product.cover} component={NextImage} alt="#" maw={300} h={200} loading="lazy" />
           <Stack maw={550}>
 
             <Text>
