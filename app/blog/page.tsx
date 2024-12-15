@@ -22,12 +22,16 @@ export default function Blog() {
                             </AccordionControl>
                             <AccordionPanel>
                                 <SimpleGrid cols={3}>
-
                                     {value.articles.map((article, index) =>
-                                        <Link href={`/blog/${key}/${article.id}`}>
-                                            <Card shadow="sm" key={index}>
-                                                <CardSection><Image src={article.picture} alt="lala" component={NextImage} mah={100} /></CardSection>
-                                                <Text>{article.name}</Text></Card>
+                                        <Link href={`/blog/${key}/${article.id}`} style={{ textDecoration: "none" }}>
+                                            <Card shadow="sm" key={index} h="100%">
+                                                <CardSection mb="md">
+                                                    <Image src={article.picture} alt="lala" component={NextImage} mah={100} />
+                                                </CardSection>
+                                                <Text>
+                                                    {article.name}
+                                                </Text>
+                                            </Card>
                                         </Link>
                                     )}
                                 </SimpleGrid>

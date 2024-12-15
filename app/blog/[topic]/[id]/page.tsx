@@ -11,23 +11,15 @@ export default function Product() {
 
     if (id && typeof id === "string" && topic && typeof topic === "string") {
         const article = blog[topic].articles[Number(id)]
-
         return (
-            <  >
-
-
-
+            <>
                 <Title ta="center" my={100}>
                     <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
                         {article.name}
                     </Text>
                 </Title>
-
-
                 {article.content}
-
-
-            </  >
+            </>
 
         );
     }

@@ -1,10 +1,11 @@
 import { ReactNode } from 'react';
 import { StaticImageData } from 'next/image';
 import { MentalHealthandSexualLifeinYoungMen } from './articles/MentalHealthandSexualLifeinYoungMen';
-import { PerformanceAnxietyArticle } from './articles/PerformanceAnxietyArticle';
+import { MentalHealthSexualityArticle } from './articles/MentalHealthSexualityArticle';
+import { StressErectionArticle } from './articles/StressErectionArticle';
 
 export interface Article {
-  id : number
+  id: number;
   name: string;
   description: string;
   content: ReactNode;
@@ -16,9 +17,12 @@ interface Blog {
 }
 
 export const blog: Record<string, Blog> = {
-  "sante-mentale" :{ 
+  'sante-mentale': {
     topic: 'Santé mentale',
-    articles: [PerformanceAnxietyArticle, MentalHealthandSexualLifeinYoungMen],
+    articles: [
+      MentalHealthSexualityArticle,
+      MentalHealthandSexualLifeinYoungMen,
+      StressErectionArticle,
+    ],
   },
-
-}
+};

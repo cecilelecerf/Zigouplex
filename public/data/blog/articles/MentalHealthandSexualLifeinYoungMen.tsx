@@ -1,6 +1,7 @@
-import { Container, Group, Paper, Text, Title } from '@mantine/core';
+import { Anchor, Container, Divider, List, ListItem, Text, ThemeIcon, Title } from '@mantine/core';
 import MonImage from '@/app/assets/image.png';
 import { Article } from '../topics';
+import { IconCheck } from '@tabler/icons-react';
 
 export const MentalHealthandSexualLifeinYoungMen: Article = {
   id: 1,
@@ -10,158 +11,120 @@ export const MentalHealthandSexualLifeinYoungMen: Article = {
         intense. L’anxiété de performance, ce trouble qui touche de nombreuses personnes, n’est pas`,
   picture: MonImage,
   content: (
-    <Container size="lg" mt="lg">
-      <Title order={1}>
-        Santé Mentale et Vie Sexuelle chez les Jeunes Hommes : Un Lien Trop Souvent Ignoré
-      </Title>
-
-      <Text mt="md">
-        Les jeunes hommes font face à un enchevêtrement de défis au cours de leur parcours vers
-        l'âge adulte. Parmi ces défis, la santé mentale et la vie sexuelle s'entrelacent souvent
-        d'une manière complexe et parfois invisible. Une mauvaise santé mentale peut avoir un impact
-        majeur sur la vie sexuelle des jeunes hommes, affectant leur confiance, leur désir et, dans
-        certains cas, leur performance. Mais comment ce lien se manifeste-t-il et comment peut-on
-        intervenir pour prévenir ou traiter ces effets ?
-      </Text>
-
-      <Title order={2} mt="xl">
-        Le Poids des Pressions Sociales et de la Performance
-      </Title>
-      <Text>
-        Pour les jeunes hommes, la pression sociale autour de la performance sexuelle est
-        particulièrement forte. Les attentes culturelles et médiatiques imposent des standards de
-        virilité qui mettent l’accent sur la conquête, la puissance sexuelle, et la capacité à
-        satisfaire son ou ses partenaires. Ces attentes irréalistes peuvent être lourdes à porter,
-        et la peur de l’échec peut engendrer une anxiété de performance qui impacte directement la
-        santé mentale.
-      </Text>
-
-      <Group mt="md">
-        <Text w={500}>Psychologue et thérapeute de couple, le Dr Marie Lefebvre explique :</Text>
-        <Text fs="italic">
-          "Les jeunes hommes sont souvent conditionnés à croire que leur valeur réside dans leur
-          performance sexuelle. Cette pression peut engendrer un stress constant, surtout lorsque
-          des problèmes sexuels commencent à émerger. L'anxiété, les troubles de l'image corporelle,
-          et parfois la dépression peuvent découler de cette source de pression."
+    <Container component="article" size="md" p="md">
+      {/* Header section with main title and meta description */}
+      <header>
+        <Title order={1} ta="center" my="lg">
+          L’anxiété de performance : 5 astuces slow life pour reprendre confiance avec Zigouplex
+        </Title>
+        <Text component="p" ta="center" color="dimmed" size="lg">
+          L’anxiété de performance peut transformer des moments intimes en sources de stress et d’incertitude. Cet article vous propose des stratégies concrètes pour retrouver votre confiance et remettre la complicité au cœur de vos relations.
         </Text>
-      </Group>
+      </header>
 
-      <Text mt="md">
-        L’anxiété liée à la performance, le manque de confiance en soi et la peur du rejet peuvent
-        rendre difficile l’épanouissement dans la vie intime. De plus, lorsque des troubles
-        érectiles ou une baisse de libido se manifestent, cela peut exacerber les sentiments de
-        honte et d'insécurité, entraînant un cercle vicieux difficile à briser.
-      </Text>
+      <Divider my="xl" />
 
-      <Title order={2} mt="xl">
-        L'Impact de la Dépression sur la Vie Sexuelle
-      </Title>
-      <Text>
-        La dépression, souvent sous-diagnostiquée chez les jeunes hommes, peut également affecter
-        gravement la vie sexuelle. Selon une étude publiée dans The Journal of Clinical Psychiatry,
-        la dépression entraîne souvent une perte de libido, des difficultés à se concentrer sur
-        l’acte sexuel, et une absence de plaisir. Ce phénomène est d'autant plus préoccupant chez
-        les jeunes hommes, pour qui la sexualité occupe une place importante dans leur identité et
-        leur développement personnel.
-      </Text>
-
-      <Text mt="md">
-        Un jeune homme en proie à la dépression peut se retrouver confronté à un désintérêt pour les
-        relations intimes. Le Dr Lefebvre précise :
-      </Text>
-
-      <Text fs="italic">
-        "Lorsque la dépression s'installe, les symptômes incluent non seulement une tristesse
-        persistante, mais aussi un sentiment de dévalorisation, de culpabilité et de fatigue. Cela
-        se répercute directement sur le désir sexuel, qui devient une source supplémentaire de
-        frustration."
-      </Text>
-
-      <Text mt="md">
-        Cette perte d'intérêt pour les relations sexuelles peut aggraver l’isolement social et
-        affectif, entraînant une dégradation de l’estime de soi, et engendrer davantage de
-        difficultés dans la gestion de la santé mentale.
-      </Text>
-
-      <Title order={2} mt="xl">
-        Stress et Performance : L'Impact sur la Libido
-      </Title>
-      <Text>
-        Le stress chronique, qu’il provienne des études, du travail, des relations ou de
-        l'incertitude quant à l'avenir, est un autre facteur majeur qui peut perturber la vie
-        sexuelle des jeunes hommes. Le stress active une série de réactions physiologiques qui
-        affectent la production d'hormones, entraînant une diminution de la libido et, dans certains
-        cas, des problèmes d’érection. Lorsque ces symptômes deviennent récurrents, cela peut créer
-        un effet domino : moins de désir conduit à moins de relations sexuelles, ce qui à son tour
-        nourrit l'anxiété.
-      </Text>
-
-      <Text mt="md">Le Dr Bertrand Dubois, spécialiste en médecine sexuelle, souligne :</Text>
-
-      <Text fs="italic">
-        "Le stress affecte directement l’équilibre hormonal, ce qui perturbe les fonctions érectiles
-        et sexuelles. Ce phénomène peut devenir un problème chronique si le stress n’est pas géré
-        correctement."
-      </Text>
-
-      <Title order={2} mt="xl">
-        Une Solution Naturelle : Comment Zigouplex Peut Aider
-      </Title>
-      <Text>
-        Dans ce contexte, une approche naturelle et efficace peut être la clé pour aider à restaurer
-        la confiance et à rétablir l’équilibre. Zigouplex, un complément alimentaire conçu pour
-        améliorer la circulation sanguine et stimuler la vitalité, peut être un allié précieux.
-        Composé d’ingrédients comme la maca péruvienne, le ginseng et la L-arginine, Zigouplex aide
-        à soutenir la fonction érectile tout en augmentant l’énergie et la libido de façon
-        naturelle.
-      </Text>
-
-      <Paper p="md" mt="md" shadow="xs" style={{ backgroundColor: '#f9fafb' }}>
-        <Text w={500}>Un utilisateur de Zigouplex témoigne :</Text>
-        <Text fs="italic">
-          "Après quelques semaines d'utilisation, non seulement ma performance a amélioré, mais ma
-          confiance est revenue. Je n'avais pas réalisé à quel point mes soucis d'estime de soi
-          affectaient ma vie sexuelle. Ce produit m'a aidé à me sentir plus maître de ma vie intime,
-          ce qui a également fait baisser mon niveau de stress global."
+      {/* Article content */}
+      <section>
+        <Title order={2} my="lg">
+          Parce qu’il faut dédramatiser : un problème qui nous touche tous
+        </Title>
+        <Text component="p">
+          On ne va pas se mentir, l’intimité, c’est censé être un moment de partage, de plaisir, de connexion. Mais voilà, parfois, la pression monte (et pas que la pression...). L’anxiété de performance, ça peut arriver à tout le monde, même à ceux qui font du yoga trois fois par semaine et sirotent des matchas bio. Avec un peu d’introspection, quelques gestes simples et un coup de pouce naturel comme <Anchor href="#zigouplex">Zigouplex</Anchor>, vous pouvez retrouver votre sérénité, sans en faire tout un drame.
         </Text>
-      </Paper>
+      </section>
 
-      <Text mt="md">
-        Zigouplex agit sur plusieurs fronts en soutenant la circulation sanguine, ce qui permet une
-        amélioration de la fonction érectile et une stimulation de la libido. En réduisant les
-        effets physiques du stress, il permet de retrouver un bien-être global et favorise une
-        approche plus positive de la sexualité.
-      </Text>
+      <Divider my="xl" />
 
-      <Title order={2} mt="xl">
-        L'Importance de la Communication et de l'Éducation
-      </Title>
-      <Text>
-        Au-delà des solutions comme Zigouplex, il est crucial que les jeunes hommes aient accès à
-        une éducation sexuelle complète et dénuée de jugements. Briser le tabou autour de la santé
-        mentale et de la vie sexuelle est essentiel pour favoriser une sexualité épanouie et en
-        harmonie avec le bien-être psychologique. Les professionnels de santé recommandent une
-        approche holistique, où la communication ouverte au sein du couple et avec un thérapeute,
-        combinée à des solutions comme Zigouplex, peut offrir un soutien précieux.
-      </Text>
+      {/* 5 tips section */}
+      <section>
+        <Title order={2} my="lg">
+          1. Faire un petit check-up émotionnel : pourquoi ça bloque ?
+        </Title>
+        <Text component="p">
+          D’abord, respirez. Mettez un disque de jazz doux en fond sonore, allumez une bougie au bois de santal, et réfléchissez. Est-ce la peur de décevoir ? Des casseroles du passé ? Un besoin compulsif d’être parfait, même sous la couette ?
+        </Text>
+        <Text component="p" w={500}>
+          Petit conseil : notez vos pensées dans un joli carnet en papier recyclé (fabriqué à la main, évidemment). Identifier ce qui vous freine, c’est le premier pas vers une reconnection avec vous-même.
+        </Text>
+      </section>
 
-      <Title order={2} mt="xl">
-        La Clé Réside dans l'Équilibre
-      </Title>
-      <Text>
-        Pour les jeunes hommes, la vie sexuelle et la santé mentale sont profondément
-        interconnectées. L’anxiété de performance, la dépression, et le stress peuvent sérieusement
-        nuire à l’épanouissement intime. Pourtant, avec les bonnes solutions, tant médicales que
-        naturelles, il est possible de restaurer l'équilibre et de redonner confiance. Des produits
-        comme Zigouplex, associés à une gestion consciente du stress et une communication saine,
-        offrent une réponse efficace à ces défis.
-      </Text>
+      <Divider my="xl" />
 
-      <Text mt="md">
-        En abordant la santé mentale avec le même sérieux que la santé physique, les jeunes hommes
-        peuvent retrouver une vie sexuelle épanouie et épanouissante, sans que ces obstacles ne
-        viennent définir leur expérience intime.
-      </Text>
+      <section>
+        <Title order={2} my="lg">
+          2. Ouvrir la discussion (avec un bon vin naturel)
+        </Title>
+        <Text component="p">
+          Cliché, mais tellement vrai : tout passe par la communication. Si vous ressentez de la pression, peut-être que votre partenaire est à mille lieues d’imaginer ce que vous traversez. Posez-vous avec une belle bouteille de rouge nature et une playlist bien chill.
+        </Text>
+        <Text component="p">
+          L’idée : partagez vos doutes sans filtre (mais restez classe). Parfois, un simple "je me sens stressé" peut désamorcer une situation tendue. Et pour le reste, un produit comme <Anchor href="#zigouplex">Zigouplex</Anchor> peut vous aider à retrouver votre zénitude sans que ça devienne une mission commando.
+        </Text>
+      </section>
+
+      <Divider my="xl" />
+
+      <section>
+        <Title order={2} my="lg">
+          3. Se recentrer avec style : méditation, respiration et thé vert
+        </Title>
+        <Text component="p">
+          Ok, le stress, on connaît. Mais franchement, ça ne mérite pas d’en faire tout un fromage. Essayez la méditation, genre <strong>vraie déconnexion</strong>, pas juste scroller Insta en position lotus. Prenez 5 minutes pour respirer à fond.
+        </Text>
+        <List
+          spacing="sm"
+          size="sm"
+          icon={
+            <ThemeIcon color="teal" size="xs"  >
+              <IconCheck />
+            </ThemeIcon>
+          }
+        >
+          <ListItem>Allumez un diffuseur d’huiles essentielles (lavande ou eucalyptus, mais bio, of course).</ListItem>
+          <ListItem>Inspirez en comptant jusqu’à 4.</ListItem>
+          <ListItem>Retenez votre souffle, puis expirez doucement sur 6 secondes.</ListItem>
+          <ListItem>Recommencez jusqu’à ce que vous soyez aussi zen qu’après un massage ayurvédique.</ListItem>
+        </List>
+      </section>
+
+      <Divider my="xl" />
+
+      <section>
+        <Title order={2} my="lg">
+          4. Adopter un lifestyle ultra-healthy : c’est la base
+        </Title>
+        <Text component="p">
+          Soyons honnêtes, la malbouffe et les nuits courtes, ça n’aide pas à se sentir au top. Prenez soin de vous, de votre corps, de votre esprit. Ça passe par des petits gestes simples mais essentiels.
+        </Text>
+        <List spacing="sm" size="sm">
+          <ListItem>Mangez local, de saison, et si possible, bio. Les fruits à coque, les légumes verts et le poisson gras, c’est votre nouveau combo gagnant.</ListItem>
+          <ListItem>Faites du sport, mais dans la joie (genre pilates ou vélo vintage dans les rues pavées).</ListItem>
+          <ListItem>Dormez mieux, idéalement entre 7 et 8 heures (et non, pas avec votre téléphone dans la main).</ListItem>
+        </List>
+      </section>
+
+      <Divider my="xl" />
+
+      <section>
+        <Title order={2} my="lg">
+          5. Et si on lâchait un peu prise ?
+        </Title>
+        <Text component="p">
+          Le vrai problème, c’est souvent ce mot : "performance". Oubliez cette idée d’objectif à atteindre, et concentrez-vous sur l’instant, sur les sensations, sur la complicité. Prenez exemple sur la slow life : moins d’attentes, plus de spontanéité.
+        </Text>
+      </section>
+
+      <Divider my="xl" />
+
+      <footer>
+        <Text component="p" ta="center" w={600}>
+          En conclusion : soyez imparfait, et c’est très bien comme ça.
+        </Text>
+        <Text component="p" ta="center" size="sm" color="dimmed">
+          La vie, ce n’est pas Instagram. L’intimité non plus. Mais avec un allié comme <Anchor href="#zigouplex">Zigouplex</Anchor>, chaque pas vers la sérénité est une victoire.
+        </Text>
+      </footer>
     </Container>
   ),
 };
