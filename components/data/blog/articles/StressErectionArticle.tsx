@@ -1,12 +1,12 @@
-import { Anchor, Container, Divider, List, ListItem, Space, Text, ThemeIcon, Title } from '@mantine/core';
-import MentalHealthImage from '@/app/assets/image.png';
+import { Container, Divider, List, ListItem, Text, ThemeIcon, Title } from '@mantine/core';
+import MonImage from '../../../../app/assets/image.png';
 import { Article } from '../topics';
 import { IconCheck } from '@tabler/icons-react';
 
 export const StressErectionArticle: Article = {
     id: 2,
     name: 'Stress et érection : comment briser le cercle vicieux avec Zigouplex',
-    picture: MentalHealthImage,
+    picture: MonImage,
     description: `Le stress est un ennemi silencieux de la fonction érectile, entraînant une spirale de frustration et d’anxiété. Cet article vous aide à comprendre les mécanismes physiologiques qui lient le stress à des troubles de l’érection, et vous propose des méthodes pratiques pour sortir de ce cercle vicieux, incluant l'utilisation de Zigouplex pour améliorer votre bien-être intime.`,
     content: (
         <Container component="article" size="md" p="md">

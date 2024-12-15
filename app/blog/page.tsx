@@ -1,4 +1,4 @@
-import { blog } from "@/public/data/blog/topics";
+import { blog } from "../../components/data/blog/topics";
 import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Box, Card, CardSection, Image, SimpleGrid, Text, Title } from "@mantine/core";
 import NextImage from 'next/image';
 import Link from "next/link";

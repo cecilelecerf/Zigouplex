@@ -1,5 +1,5 @@
 import { Anchor, Container, Divider, List, ListItem, Text, ThemeIcon, Title } from '@mantine/core';
-import MonImage from '@/app/assets/image.png';
+import MonImage from '../../../../app/assets/image.png';
 import { Article } from '../topics';
 import { IconCheck } from '@tabler/icons-react';
 

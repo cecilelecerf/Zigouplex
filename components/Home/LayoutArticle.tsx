@@ -1,6 +1,6 @@
 import NextImage from 'next/image';
 import { Box, Button, Card, Image, Stack, Text, Title } from '@mantine/core';
-import { Article } from '@/public/data/blog/topics';
+import { Article } from '../data/blog/topics';
 
 export const LayoutArticle = ({ article }: { article: Article }) => (
   <section>

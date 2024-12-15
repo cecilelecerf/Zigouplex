@@ -3,7 +3,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import { Box, ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
-import { Nav } from '@/components/ui/nav';
+import { Nav } from '../components/ui/nav';
 
 export const metadata = {
   title: 'Mantine Next.js template',

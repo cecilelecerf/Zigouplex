@@ -1,7 +1,7 @@
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { Box, Card, CardSection, Image, SimpleGrid, Space, Text, Title } from '@mantine/core';
-import { boxs, products } from '@/public/data/product';
+import { boxs, products } from '../../components/data/product';
 
 export default function Catalog() {
   return (

@@ -12,8 +12,8 @@ import {
   Text,
   Title,
 } from '@mantine/core';
-import MonImage from '@/app/assets/image.png';
-import { products } from '@/public/data/product';
+import MonImage from '../../app/assets/image.png';
+import { products } from '../data/product';
 
 export const LayoutProduct = () => (
 

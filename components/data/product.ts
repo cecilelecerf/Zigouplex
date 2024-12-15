@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import MonImage from '@/app/assets/image.png';
+import MonImage from '../../app/assets/image.png';
 
 interface Product {
   id: string;

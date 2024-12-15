@@ -1,12 +1,12 @@
 import { Anchor, Container, Divider, List, ListItem, Space, Text, ThemeIcon, Title } from '@mantine/core';
-import MentalHealthImage from '@/app/assets/image.png';
+import MonImage from '../../../../app/assets/image.png';
 import { Article } from '../topics';
 import { IconCheck } from '@tabler/icons-react';
 
 export const MentalHealthSexualityArticle: Article = {
   id: 0,
   name: 'Santé Mentale et Vie Sexuelle chez les Jeunes Hommes : Un Lien Trop Souvent Ignoré',
-  picture: MentalHealthImage,
+  picture: MonImage,
   description: `La santé mentale et la vie sexuelle des jeunes hommes sont étroitement liées, mais souvent ignorées ou mal comprises. Cet article explore comment les pressions sociales, l'anxiété et la dépression influencent la sexualité et la confiance. Il vous guide à travers des solutions pour rétablir l'équilibre, en vous encourageant à parler ouvertement de vos émotions et à aborder ces sujets essentiels pour une vie sexuelle épanouie.`,
   content: (
     <Container component="article" size="md" p="md">

@@ -1,5 +1,5 @@
 import { Card, Center, Flex, Rating, Text, Title } from '@mantine/core';
-import { Testimonial, testimonials } from '@/public/data/testimonials';
+import { Testimonial, testimonials } from '../data/testimonials';
 
 export const LayoutTestimonial = () => (
   <section>
