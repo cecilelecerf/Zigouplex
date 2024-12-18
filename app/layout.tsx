@@ -17,7 +17,7 @@ type RootLayoutProps = {
     description?: string;
   };
 };
-export default function RootLayout({ children, meta }: RootLayoutProps) {
+export default function RootLayout({ children }: { children: any }) {
   return (
 
     <html lang="en" suppressHydrationWarning>
@@ -28,8 +28,8 @@ export default function RootLayout({ children, meta }: RootLayoutProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <title>{meta?.title || "Zigouplex : Solution Naturelle Contre les Troubles d’Érection | Boostez Votre Confiance"}</title>
-        <meta name="description" content={meta?.description || "Description par défaut"} />
+        <title>{"Zigouplex : Solution Naturelle Contre les Troubles d’Érection | Boostez Votre Confiance"}</title>
+        <meta name="description" content={"Description par défaut"} />
 
       </head>
       <body>
