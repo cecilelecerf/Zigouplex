@@ -19,7 +19,7 @@ import { products } from '../data/product';
 export const LayoutProduct = () => (
 
   <Stack align="center">
-    <Group gap="md" justify="space-between">
+    <Group gap="xl" justify="center">
       {Object.entries(products)
         .slice(0, 3)
         .map(([_key, value], index) => (
@@ -30,7 +30,7 @@ export const LayoutProduct = () => (
     </Group>
     <Link href="/catalog" >
       <Button color="orange" w="fit-content">
-        {' '}
+
         Découvrir + de produit {'->'}
       </Button>
     </Link>

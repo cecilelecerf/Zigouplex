@@ -23,10 +23,10 @@ export default function Product() {
 
 
                     </Title>
-                    <Card shadow="md" w="fit-content">
-                        <Group gap="md" justify='center' w="fit-content">
+                    <Card shadow="md" w="fit-content" mx="auto">
+                        <Group gap="md" justify='center' w="fit-content" style={{ flexDirection: width > 950 ? "row" : "column" }}>
                             <Image component={NextImage} src={article.picture} alt='la' maw={300} h={200} loading="lazy" />
-                            <Text component="p" p="md" w={width > 950 ? 700 : width > 400 ? 400 : 200} >
+                            <Text component="p" p="md" w={width > 950 ? 500 : "100%"}>
                                 {article.description}
                             </Text>
                         </Group>
