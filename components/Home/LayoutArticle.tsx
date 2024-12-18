@@ -1,41 +1,37 @@
 import NextImage from 'next/image';
-import { Box, Button, Card, Image, Stack, Text, Title } from '@mantine/core';
+import { Box, Button, Card, Group, Image, Paper, Stack, Text, Title } from '@mantine/core';
 import { Article } from '../data/blog/topics';
 
 export const LayoutArticle = ({ article }: { article: Article }) => (
   <section>
     <Stack align="end">
-      {/*  
-      <Box>
-        <Title order={2}>{article.name}</Title>
-        <Text>{article.description}</Text>
-      </Box> */}
-      {/* </Card> */}
 
-      <Card
+      <Paper
         w="100%"
-        style={{ overflow: 'hidden', flexDirection: 'row' }}
-        display="flex"
-        dir="row"
+        style={{ overflow: 'hidden' }}
         shadow="sm"
+        p="md"
       >
-        <Image
-          src={article.picture}
-          component={NextImage}
-          alt="lala"
-          maw={400}
-          h={200}
-          radius="sm"
-          mr="lg"
-          loading="lazy"
+        <Group>
 
-        />
+          <Image
+            src={article.picture}
+            component={NextImage}
+            alt="lala"
+            maw={400}
+            h={200}
+            radius="sm"
+            mr="lg"
+            loading="lazy"
 
-        <Box>
-          <Title order={2}>{article.name}</Title>
-          <Text>{article.description}</Text>
-        </Box>
-      </Card>
+          />
+
+          <Box maw={400}>
+            <Title order={3}>{article.name}</Title>
+            <Text lineClamp={4}>{article.description}</Text>
+          </Box>
+        </Group>
+      </Paper>
       <Button color='orange'>Découvrir + d'article</Button>
     </Stack>
 

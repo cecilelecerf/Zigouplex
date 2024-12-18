@@ -7,6 +7,7 @@ import {
   CardProps,
   CardSection,
   Flex,
+  Group,
   Image,
   Stack,
   Text,
@@ -18,7 +19,7 @@ import { products } from '../data/product';
 export const LayoutProduct = () => (
 
   <Stack align="center">
-    <Flex gap="md" justify="space-between">
+    <Group gap="md" justify="space-between">
       {Object.entries(products)
         .slice(0, 3)
         .map(([_key, value], index) => (
@@ -26,7 +27,7 @@ export const LayoutProduct = () => (
             <CardProduct title={value.name} txt={value.description} />
           </Link>
         ))}
-    </Flex>
+    </Group>
     <Link href="/catalog" >
       <Button color="orange" w="fit-content">
         {' '}
@@ -36,9 +37,9 @@ export const LayoutProduct = () => (
   </Stack>
 );
 const CardProduct = ({ title, txt }: CardProps & { title: string; txt: string }) => (
-  <Card w="100%" style={{ overflow: 'hidden' }} maw={400} shadow="sm" >
+  <Card w="100%" style={{ overflow: 'hidden' }} maw={400} shadow="sm" miw={200} >
     <CardSection>
-      <Image src={MonImage} component={NextImage} alt="lala" h={350} loading="lazy" />
+      <Image src={MonImage} component={NextImage} alt="lala" h={300} loading="lazy" />
     </CardSection>
     <Box p="md" td="none">
       <Title order={2} td="none">{title}</Title>

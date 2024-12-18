@@ -1,5 +1,6 @@
 import { Anchor, Button, Center, Text, Title } from '@mantine/core';
 import classes from './Welcome.module.css';
+import Link from 'next/link';
 
 export const Welcome = () => {
   return (
@@ -14,7 +15,9 @@ export const Welcome = () => {
         Bienvenue chez Zigouplex, le médicament naturel contre les troubles d’érection. Notre gamme de produits est conçue pour vous redonner confiance et vitalité.
       </Text>
       <Center mt="md">
-        <Button color="orange">LALA</Button>
+        <Link href={`/catalog/`} style={{ textDecoration: "none" }}>
+          <Button color="orange">Découvre tous les produits</Button>
+        </Link>
       </Center>
     </>
   );

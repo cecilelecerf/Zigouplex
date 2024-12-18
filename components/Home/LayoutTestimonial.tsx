@@ -1,4 +1,4 @@
-import { Card, Center, Flex, Rating, Text, Title } from '@mantine/core';
+import { Card, Center, Flex, Group, Rating, Text, Title } from '@mantine/core';
 import { Testimonial, testimonials } from '../data/testimonials';
 
 export const LayoutTestimonial = () => (
@@ -6,16 +6,16 @@ export const LayoutTestimonial = () => (
     <Title order={2} mb="md">
       Ce qu'ils pensent de nous
     </Title>
-    <Flex gap="md">
+    <Group gap="md" justify='center'>
       {testimonials[0].slice(0, 3).map((testimonial, i) => (
         <CardPeople testimonial={testimonial} key={i} />
       ))}
-    </Flex>
+    </Group>
   </section>
 );
 
 const CardPeople = ({ testimonial }: { testimonial: Testimonial }) => (
-  <Card shadow="md">
+  <Card shadow="md" maw={300}>
     <Center mb="md">
       <Rating defaultValue={testimonial.rating} />
     </Center>

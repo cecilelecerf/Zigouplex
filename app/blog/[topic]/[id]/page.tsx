@@ -1,13 +1,15 @@
 'use client';
 // Marque le fichier comme un composant client
 import NextImage from 'next/image';
-import { Text, Title, Image, Flex, Paper } from '@mantine/core';
+import { Text, Title, Image, Flex, Paper, Group, Card } from '@mantine/core';
 import { useParams } from 'next/navigation';
 import { blog } from '../../../../components/data/blog//topics';
+import { useViewportSize } from '@mantine/hooks';
 
 export default function Product() {
     const params = useParams();
     const { id, topic } = params;
+    const { width } = useViewportSize();
 
     if (id && typeof id === "string" && topic && typeof topic === "string") {
         const article = blog[topic].articles[Number(id)]
@@ -21,14 +23,14 @@ export default function Product() {
 
 
                     </Title>
-                    <Paper shadow="md">
-                        <Flex gap="md">
+                    <Card shadow="md" w="fit-content">
+                        <Group gap="md" justify='center' w="fit-content">
                             <Image component={NextImage} src={article.picture} alt='la' maw={300} h={200} loading="lazy" />
-                            <Text component="p" p="md" >
+                            <Text component="p" p="md" w={width > 950 ? 700 : width > 400 ? 400 : 200} >
                                 {article.description}
                             </Text>
-                        </Flex>
-                    </Paper>
+                        </Group>
+                    </Card>
                 </header>
 
                 {article.content}
