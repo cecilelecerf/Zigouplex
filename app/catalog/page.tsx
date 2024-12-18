@@ -14,7 +14,7 @@ export default function Catalog() {
 
       <Box>
         <Title order={2}>Tous les zigouplex</Title>
-        <SimpleGrid cols={3} mt="xl">
+        <SimpleGrid cols={2} mt="xl">
           {products.map((product, i) => (
             <Link href={`/catalog/product/${product.id}`} key={i} style={{ textDecoration: "none" }}>
               <Card
@@ -36,7 +36,7 @@ export default function Catalog() {
       <Space h={150} />
 
       <Title order={2}>Les box</Title>
-      <SimpleGrid cols={3} mt="xl">
+      <SimpleGrid cols={2} mt="xl">
         {boxs.map((box, i) => (
           <Link href={`/catalog/box/${box.id}`} key={i} style={{ textDecoration: "none" }}>
 
