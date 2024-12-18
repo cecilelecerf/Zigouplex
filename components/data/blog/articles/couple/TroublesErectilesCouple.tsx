@@ -1,8 +1,8 @@
 import { Container, Divider, Text, Title } from '@mantine/core';
-import MonImage from "../../../../assets/image.png";
+import MonImage from "../../../../assets/blog/couple/article_2.webp";
 import { Article } from '../../topics';
 
-export const TroublesErectiles: Article = {
+export const TroublesErectilesCouple: Article = {
     id: 1,
     name: 'Les Troubles Érectiles : Quand l’Intimité du Couple en Souffre',
     description: `Les troubles érectiles touchent un nombre important d'hommes, mais leur impact ne se limite pas seulement à la performance physique. Que l’on soit dans une relation hétéronormée ou homosexuelle, les conséquences de ce problème de santé vont bien au-delà du simple dysfonctionnement sexuel. En fait, elles pénètrent souvent dans l’intimité et la dynamique émotionnelle du couple, parfois en s’installant insidieusement et durablement. Comment ces troubles affectent-ils les relations amoureuses ? Et surtout, quelles solutions existent pour les surmonter, comme Zigouplex ?`,

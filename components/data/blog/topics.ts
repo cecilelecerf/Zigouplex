@@ -1,12 +1,13 @@
 import { ReactNode } from 'react';
 import { StaticImageData } from 'next/image';
 import { RekindleFlameCouple } from './articles/couple/RekindleFlameCouple';
-import { TroublesErectiles } from './articles/couple/TroublesErectiles';
+import { TroublesErectilesCouple } from './articles/couple/TroublesErectilesCouple';
 import { DepressionAndLibido } from './articles/mentalHealth/DepressionAndLibido';
 import { MentalHealthandSexualLifeinYoungMen } from './articles/mentalHealth/MentalHealthandSexualLifeinYoungMen';
 import { MentalHealthSexualityArticle } from './articles/mentalHealth/MentalHealthSexualityArticle';
 import { StressErectionArticle } from './articles/mentalHealth/StressErectionArticle';
 import { ImpactAlimentationSexuelle } from './articles/sexualHealth/ImpactAlimentationSexuelle';
+import { TroublesErectiles } from './articles/sexualHealth/TroublesErectiles';
 
 export interface Article {
   id: number;
@@ -33,7 +34,7 @@ export const blog: Record<string, Blog> = {
   },
   couple: {
     topic: 'Couple',
-    articles: [RekindleFlameCouple, TroublesErectiles],
+    articles: [RekindleFlameCouple, TroublesErectilesCouple],
   },
   sexualHealth: {
     topic: 'Santé sexuelle',

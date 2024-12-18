@@ -1,5 +1,5 @@
 import NextImage from 'next/image';
-import { Box, Button, Card, Group, Image, Paper, Stack, Text, Title } from '@mantine/core';
+import { Box, Button, Group, Image, Paper, Stack, Text, Title } from '@mantine/core';
 import { Article } from '../data/blog/topics';
 import Link from 'next/link';
 
@@ -14,14 +14,14 @@ export const LayoutArticle = ({ article }: { article: Article }) => (
           p="md"
           c="dark"
         >
-          <Group>
-
+          <Group align='center'>
             <Image
               src={article.picture}
               component={NextImage}
               alt="lala"
-              maw={400}
-              h={200}
+              h={300}
+              w="100%"
+              fit="cover"
               radius="sm"
               mr="lg"
               loading="lazy"

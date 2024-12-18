@@ -34,7 +34,7 @@ export default function Blog() {
                                                     <Image src={article.picture} alt="lala" component={NextImage} mah={100} loading="lazy" />
 
                                                 </CardSection>
-                                                <Text>
+                                                <Text h={125}>
                                                     {article.name}
                                                 </Text>
                                             </Card>

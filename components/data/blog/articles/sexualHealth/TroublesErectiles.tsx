@@ -1,5 +1,5 @@
 import { Container, Divider, Text, Title } from '@mantine/core';
-import MonImage from "../../../../assets/image.png";
+import MonImage from "../../../../assets/blog/sante_sexuelle/article_1.webp";
 import { Article } from '../../topics';
 
 export const TroublesErectiles: Article = {

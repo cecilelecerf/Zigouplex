@@ -1,5 +1,5 @@
 import { Container, Divider, List, ListItem, Text, Title } from '@mantine/core';
-import MonImage from "../../../../assets/image.png"
+import MonImage from "../../../../assets/blog/couple/article_1.webp"
 import { Article } from '../../topics';
 
 export const RekindleFlameCouple: Article = {

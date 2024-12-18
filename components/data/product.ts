@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import MonImage from '../../app/assets/image.png';
+import MonImage from '../../components/assets/image.png';
 
 interface Product {
   id: string;
@@ -24,7 +24,6 @@ interface Usage {
   punctualEffect: string;
 }
 
-
 interface BoxContent {
   name: string;
   description: string;
@@ -36,7 +35,7 @@ interface Box {
   cover: StaticImageData;
   description: string;
   contenu: BoxContent[];
-   slogan: string;
+  slogan: string;
 }
 
 export const boxs: Box[] = [
@@ -86,7 +85,7 @@ export const boxs: Box[] = [
     ],
     slogan:
       'Les hommes engagés dans une approche proactive pour booster leur confiance et leur bien-être sexuel.',
-   },
+  },
 
   {
     id: '2',
@@ -150,8 +149,9 @@ export const boxs: Box[] = [
     ],
     slogan:
       "Les couples qui souhaitent célébrer la Saint-Valentin avec un cadeau à la fois romantique et sensuel. Idéal pour raviver la passion, renforcer l'intimité et partager des moments inoubliables ensemble.",
-},
-];export const products: Product[] = [
+  },
+];
+export const products: Product[] = [
   {
     id: '0',
     name: 'Zigouplex Classique',
