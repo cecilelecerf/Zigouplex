@@ -2,7 +2,10 @@ import NextImage from 'next/image';
 import Link from 'next/link';
 import { Box, Card, CardSection, Image, SimpleGrid, Space, Text, Title } from '@mantine/core';
 import { boxs, products } from '../../components/data/product';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: "test"
+}
 export default function Catalog() {
   return (
     <>

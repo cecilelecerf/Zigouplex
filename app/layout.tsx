@@ -10,8 +10,14 @@ export const metadata = {
   title: 'Mantine Next.js template',
   description: 'I am using Mantine with Next.js!',
 };
-
-export default function RootLayout({ children }: { children: any }) {
+type RootLayoutProps = {
+  children: React.ReactNode;
+  meta?: {
+    title?: string;
+    description?: string;
+  };
+};
+export default function RootLayout({ children, meta }: RootLayoutProps) {
   return (
 
     <html lang="en" suppressHydrationWarning>
@@ -22,8 +28,9 @@ export default function RootLayout({ children }: { children: any }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <title>Zigouplex : Solution Naturelle Contre les Troubles d’Érection | Boostez Votre Confiance
-        </title>
+        <title>{meta?.title || "Zigouplex : Solution Naturelle Contre les Troubles d’Érection | Boostez Votre Confiance"}</title>
+        <meta name="description" content={meta?.description || "Description par défaut"} />
+
       </head>
       <body>
         <SpeedInsights />

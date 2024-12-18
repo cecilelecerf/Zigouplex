@@ -6,6 +6,7 @@ import { LayoutTestimonial } from '../components/Home/LayoutTestimonial';
 import { blog } from '../components/data/blog/topics';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { Welcome } from '../components/Welcome/Welcome';
+import RootLayout from './layout';
 
 export default function HomePage() {
   return (
@@ -34,3 +35,13 @@ export default function HomePage() {
 
   );
 }
+HomePage.getLayout = function getLayout(page: React.ReactNode) {
+  return (
+    <RootLayout meta={{
+      title: "À propos - Zigouplex",
+      description: "Découvrez comment Zigouplex peut améliorer votre confiance et votre bien-être."
+    }}>
+      {page}
+    </RootLayout>
+  );
+};

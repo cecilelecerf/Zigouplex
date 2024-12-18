@@ -5,6 +5,7 @@ import { Accordion, AccordionControl, AccordionItem, AccordionPanel, Avatar, Car
 import { products } from '../../../../components/data/product';
 import { useParams } from 'next/navigation';
 import { testimonials } from '../../../../components/data/testimonials';
+// import { Metadata } from 'next';
 
 export default function Product() {
   const params = useParams();
@@ -100,6 +101,9 @@ export default function Product() {
     );
   }
   else {
-    return (<>Error</>)
+    return (
+
+      <Text color="red" size="xl">Produit non trouvé. Veuillez vérifier l'URL.</Text>
+    );
   }
 }
