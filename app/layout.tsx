@@ -4,7 +4,7 @@ import React from 'react';
 import { Box, ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
 import { Nav } from '../components/ui/nav';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata = {
   title: 'Mantine Next.js template',
   description: 'I am using Mantine with Next.js!',
@@ -25,7 +25,10 @@ export default function RootLayout({ children }: { children: any }) {
         </title>
       </head>
       <body>
+        <SpeedInsights />
+
         <MantineProvider theme={theme}>
+
           <Box m="xl" >
             <Nav />
             {children}
