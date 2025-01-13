@@ -27,24 +27,24 @@ export const FemaleSexualHealthBasics: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Bien-être émotionnel :
                     </Text>{' '}
                     Une bonne santé sexuelle contribue à une meilleure estime de soi et à un équilibre émotionnel positif.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Prévention des infections :
                     </Text>{' '}
                     Une bonne hygiène et des pratiques sexuelles sûres permettent de prévenir les infections sexuellement transmissibles (IST).
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Contraception et planification familiale :
                     </Text>{' '}
                     Comprendre les options contraceptives permet de faire des choix éclairés concernant la grossesse et la planification familiale.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -64,30 +64,30 @@ export const FemaleSexualHealthBasics: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Pratiquer une bonne hygiène intime :
                     </Text>{' '}
                     Nettoyez votre zone intime de manière régulière avec des produits doux et adaptés pour éviter les infections.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Se protéger contre les IST :
                     </Text>{' '}
                     Utilisez des méthodes de protection telles que les préservatifs pour éviter la transmission des IST.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Discuter ouvertement avec son partenaire :
                     </Text>{' '}
                     La communication ouverte sur les préférences sexuelles, les limites et la santé est essentielle pour une relation saine.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Consulter régulièrement un professionnel de santé :
                     </Text>{' '}
                     Des visites régulières chez un gynécologue ou un médecin permettent de surveiller votre santé sexuelle et de traiter les problèmes rapidement.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -107,24 +107,24 @@ export const FemaleSexualHealthBasics: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Douleurs pendant les rapports sexuels :
                     </Text>{' '}
                     Si vous ressentez des douleurs persistantes pendant les relations sexuelles, cela peut indiquer un problème médical.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Irrégularités menstruelles :
                     </Text>{' '}
                     Des règles irrégulières, douloureuses ou manquantes peuvent être le signe d'un trouble hormonal ou d'une autre affection.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Démangeaisons ou irritations :
                     </Text>{' '}
                     Des démangeaisons, des brûlures ou des irritations dans la zone génitale peuvent être des symptômes d'une infection.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

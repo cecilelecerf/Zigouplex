@@ -26,24 +26,24 @@ export const SelfEsteemAndSexuality: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Doute sur ses capacités :
                     </Text>{' '}
                     Une personne avec une faible estime de soi peut avoir des difficultés à se sentir compétente ou désirée dans une relation intime.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Peur du rejet :
                     </Text>{' '}
                     Cette peur peut limiter l'initiative dans les relations sexuelles ou conduire à des comportements d'évitement.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Manque de communication :
                     </Text>{' '}
                     Une faible confiance en soi peut rendre difficile l'expression des besoins et des désirs sexuels.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,30 +63,30 @@ export const SelfEsteemAndSexuality: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Travail sur soi :
                     </Text>{' '}
                     Identifiez les croyances limitantes qui affectent votre confiance et remplacez-les par des pensées positives.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Pratique de l'auto-compassion :
                     </Text>{' '}
                     Soyez bienveillant envers vous-même et acceptez vos imperfections comme faisant partie de votre humanité.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Activités valorisantes :
                     </Text>{' '}
                     Engagez-vous dans des activités qui renforcent votre sentiment de compétence et de satisfaction personnelle.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Communication ouverte :
                     </Text>{' '}
                     Parlez de vos insécurités avec votre partenaire pour renforcer la confiance et établir une meilleure compréhension mutuelle.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

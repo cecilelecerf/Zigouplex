@@ -26,24 +26,24 @@ export const STDPrevention: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Protection contre des maladies graves :
                     </Text>{' '}
                     Certaines IST, comme le VIH ou l'hépatite, peuvent entraîner des complications de santé importantes si elles ne sont pas traitées.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Prévention de la transmission :
                     </Text>{' '}
                     Prévenir les IST réduit le risque de transmission à ses partenaires sexuels et à la communauté.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Maintien de la santé reproductive :
                     </Text>{' '}
                     Certaines IST peuvent affecter la fertilité, ce qui rend la prévention essentielle pour protéger la santé reproductive.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,36 +63,36 @@ export const STDPrevention: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Utilisez des préservatifs :
                     </Text>{' '}
                     Les préservatifs, utilisés correctement à chaque rapport sexuel, offrent une protection efficace contre de nombreuses IST.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Faites-vous tester régulièrement :
                     </Text>{' '}
                     Se faire tester fréquemment permet de détecter les IST tôt, même sans symptômes, et de prévenir leur transmission.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Limitez le nombre de partenaires :
                     </Text>{' '}
                     Réduire le nombre de partenaires sexuels réduit le risque d'exposition aux IST.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Vaccinez-vous :
                     </Text>{' '}
                     Des vaccins sont disponibles pour prévenir certaines IST, comme l'hépatite B et le papillomavirus humain (HPV).
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Évitez les comportements à risque :
                     </Text>{' '}
                     Limitez la consommation d'alcool ou de drogues, car ces substances peuvent altérer votre jugement et augmenter les risques d'exposition.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

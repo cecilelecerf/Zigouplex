@@ -26,24 +26,24 @@ export const AnxietyAndIntimac: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" w="bold">
                         Diminution du désir sexuel :
                     </Text>{' '}
                     Les pensées anxieuses peuvent réduire la libido et rendre difficile l'engagement dans des activités intimes.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" w="bold">
                         Difficultés de communication :
                     </Text>{' '}
                     L'anxiété peut entraîner des malentendus et limiter les échanges ouverts entre partenaires.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" w="bold">
                         Problèmes physiques :
                     </Text>{' '}
                     Les troubles tels que les troubles érectiles ou la douleur pendant les rapports peuvent être exacerbés par l'anxiété.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,30 +63,30 @@ export const AnxietyAndIntimac: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" w="bold">
                         Thérapie cognitivo-comportementale (TCC) :
                     </Text>{' '}
                     La TCC aide à identifier et à gérer les pensées négatives qui alimentent l'anxiété.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" w="bold">
                         Techniques de relaxation :
                     </Text>{' '}
                     La méditation, le yoga et les exercices de respiration profonde peuvent réduire les niveaux d'anxiété.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" w="bold">
                         Communication ouverte :
                     </Text>{' '}
                     Parlez de vos préoccupations avec votre partenaire pour renforcer la confiance et la compréhension.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" w="bold">
                         Consultation médicale :
                     </Text>{' '}
                     Un professionnel de santé peut proposer des traitements adaptés, comme des thérapies ou des médicaments.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

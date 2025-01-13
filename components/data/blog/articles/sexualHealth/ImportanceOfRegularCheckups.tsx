@@ -26,24 +26,24 @@ export const ImportanceOfRegularCheckups: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Détection précoce des maladies :
                     </Text>{' '}
                     Les check-ups permettent d'identifier des conditions de santé, comme l'hypertension ou le diabète, avant qu'elles ne causent des complications.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Prévention des maladies graves :
                     </Text>{' '}
                     En suivant des recommandations adaptées à votre âge et votre état de santé, vous pouvez prévenir des maladies graves telles que les cancers ou les maladies cardiaques.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Suivi des antécédents familiaux :
                     </Text>{' '}
                     Un check-up régulier permet de surveiller les risques liés à vos antécédents familiaux et d'adopter des mesures préventives adaptées.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,30 +63,30 @@ export const ImportanceOfRegularCheckups: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Planifiez un rendez-vous annuel :
                     </Text>{' '}
                     Il est conseillé de programmer un bilan de santé une fois par an pour un suivi complet de votre état de santé.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Discutez de vos antécédents :
                     </Text>{' '}
                     Lors du rendez-vous, informez votre médecin de vos antécédents médicaux et familiaux afin d’adapter les tests et examens.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Faites des tests de dépistage :
                     </Text>{' '}
                     Selon votre âge, votre sexe et vos habitudes, votre médecin pourra vous recommander des tests spécifiques, tels que des dépistages de cancer ou des bilans sanguins.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Prenez des rendez-vous de suivi :
                     </Text>{' '}
                     En fonction des résultats, n'oubliez pas de planifier les consultations de suivi et de respecter les recommandations de votre médecin.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

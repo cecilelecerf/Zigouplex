@@ -26,24 +26,24 @@ export const JealousyAndTrust: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Insécurité personnelle :
                     </Text>{' '}
                     Un manque de confiance en soi peut intensifier les sentiments de jalousie.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Expériences passées :
                     </Text>{' '}
                     Des relations antérieures marquées par l'infidélité ou la trahison peuvent laisser des cicatrices émotionnelles.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Manque de communication :
                     </Text>{' '}
                     Les malentendus ou un manque de clarté peuvent alimenter des suspicions injustifiées.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,30 +63,30 @@ export const JealousyAndTrust: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Communication honnête :
                     </Text>{' '}
                     Partagez vos sentiments et préoccupations avec votre partenaire, de manière calme et respectueuse.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Établir des limites saines :
                     </Text>{' '}
                     Discutez et convenez de limites claires qui respectent les besoins de chacun.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Travailler sur soi-même :
                     </Text>{' '}
                     Renforcez votre estime de soi par des activités positives et l'autocompassion.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Faites preuve de patience :
                     </Text>{' '}
                     La confiance prend du temps à se construire. Soyez patient et ouvert au changement.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

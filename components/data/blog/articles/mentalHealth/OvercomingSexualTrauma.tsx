@@ -26,24 +26,24 @@ export const OvercomingSexualTrauma: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Conséquences émotionnelles :
                     </Text>{' '}
                     Sentiments de honte, de culpabilité ou de peur persistants qui peuvent altérer l'estime de soi.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Effets sur les relations :
                     </Text>{' '}
                     Les traumatismes peuvent rendre difficile la confiance envers les autres, notamment dans des relations intimes.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Troubles psychologiques :
                     </Text>{' '}
                     L'anxiété, la dépression ou le stress post-traumatique (PTSD) sont des réponses fréquentes aux traumatismes sexuels.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,30 +63,30 @@ export const OvercomingSexualTrauma: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Thérapie spécialisée :
                     </Text>{' '}
                     Consulter un thérapeute formé en traitement des traumatismes peut offrir un espace sûr pour exprimer et traiter les émotions.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Groupes de soutien :
                     </Text>{' '}
                     Rejoindre des groupes avec d'autres survivants permet de partager des expériences et de se sentir moins isolé.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Techniques de gestion du stress :
                     </Text>{' '}
                     Des activités comme le yoga, la méditation ou l'art-thérapie peuvent aider à apaiser l'esprit et le corps.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Éducation et information :
                     </Text>{' '}
                     Apprendre sur les traumatismes peut aider à comprendre les réactions émotionnelles et physiques, et à mieux y faire face.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />

@@ -26,24 +26,24 @@ export const CommunicationInRelationships: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Renforce la confiance :
                     </Text>{' '}
                     Les échanges ouverts aident à bâtir un climat de sécurité et de compréhension mutuelle.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Résout les conflits :
                     </Text>{' '}
                     Une bonne communication permet de gérer les désaccords de manière constructive et d'éviter les malentendus.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Renforce les liens émotionnels :
                     </Text>{' '}
                     Partager ses pensées et émotions crée une connexion plus profonde entre les partenaires.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
@@ -63,30 +63,30 @@ export const CommunicationInRelationships: Article = {
                     </ThemeIcon>
                 }
             >
-                <List.Item>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Écoute active :
                     </Text>{' '}
                     Soyez attentif aux paroles de l'autre, sans interrompre, et reformulez pour montrer que vous comprenez.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Exprimez vos besoins clairement :
                     </Text>{' '}
                     Utilisez des phrases en "je" pour éviter de blâmer, par exemple, "Je me sens..." au lieu de "Tu fais toujours...".
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Gérez vos émotions :
                     </Text>{' '}
                     Prenez le temps de vous calmer avant de discuter si vous vous sentez en colère ou stressé.
-                </List.Item>
-                <List.Item>
+                </ListItem>
+                <ListItem>
                     <Text component="span" fw="bold">
                         Fixez des moments pour discuter :
                     </Text>{' '}
                     Planifiez régulièrement des moments de dialogue pour parler de vos préoccupations ou projets.
-                </List.Item>
+                </ListItem>
             </List>
 
             <Divider my="lg" />
