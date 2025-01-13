@@ -1,4 +1,4 @@
-import { Anchor, Container, Divider, List, ListItem, Space, Text, ThemeIcon, Title } from '@mantine/core';
+import { Container, Divider, List, ListItem, Space, Text, ThemeIcon, Title } from '@mantine/core';
 import MonImage from "../../../../assets/blog/sante_mentale/article_2.webp"
 import { Article } from '../../topics';
 import { IconCheck } from '@tabler/icons-react';

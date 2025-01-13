@@ -19,9 +19,9 @@ export default function Product() {
             <>
                 <header>
                     <Title order={1} ta="center" my="lg">
-                        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>       {article.name}</Text>
-
-
+                        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
+                            {article.name}
+                        </Text>
                     </Title>
                     <Card shadow="md" w="fit-content" mx="auto">
                         <Group gap="md" justify='center' w="fit-content" style={{ flexDirection: width > 950 ? "row" : "column" }}>

@@ -34,7 +34,7 @@ export default function Product() {
       }
     ]
     return (
-      <>
+      <div itemScope itemType="https://schema.org/Product">
         <header>
 
           <Title ta="center" my={100}>
@@ -42,14 +42,14 @@ export default function Product() {
               {product.name}
             </Text>
             {product.slogan && (
-              <Text>
+              <Text >
                 {product.slogan}
               </Text>
 
             )}
           </Title>
         </header>
-        <Group gap="xl">
+        <Group gap="xl" >
           <Image src={product.cover} component={NextImage} alt="#" maw={300} h={200} loading="lazy" />
           <Stack maw={550}>
 
@@ -96,7 +96,7 @@ export default function Product() {
           )}
         </Group>
 
-      </  >
+      </div>
 
     );
   }
