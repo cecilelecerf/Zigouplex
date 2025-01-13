@@ -2,7 +2,7 @@
 import { Title, Text, Container, List, ThemeIcon, Divider } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import { Article } from '../../topics';
-import MonImage from "../../../../assets/blog/sante_mentale/communication_in_relationships.webp";
+import MonImage from "../../../../assets/blog/sante_mentale/article_1.webp";
 
 export const FemaleSexualHealthBasics: Article = {
     id: 4,

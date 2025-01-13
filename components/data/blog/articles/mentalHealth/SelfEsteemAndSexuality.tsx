@@ -1,7 +1,7 @@
 import { Title, Text, Container, List, ThemeIcon, Divider } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import { Article } from '../../topics';
-import MonImage from "../../../../assets/blog/sante_mentale/self_esteem_sexuality.webp";
+import MonImage from "../../../../assets/blog/sante_mentale/article_1.webp";
 
 export const SelfEsteemAndSexuality: Article = {
     id: 5,
