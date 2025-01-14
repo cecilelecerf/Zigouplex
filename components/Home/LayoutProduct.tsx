@@ -6,6 +6,7 @@ import {
   Card,
   CardProps,
   CardSection,
+  Flex,
   Group,
   Image,
   Stack,
@@ -13,19 +14,19 @@ import {
   Title,
 } from '@mantine/core';
 import MonImage from '../../components/assets/image.png';
-import { products } from '../data/product';
+import { Product, products } from '../data/product';
 
 export const LayoutProduct = () => (
   <Stack align="center">
-    <Group gap="xl" justify="center">
+    <Flex gap="xl" justify="center" direction={{ base: 'column', sm: 'row' }}>
       {Object.entries(products)
         .slice(0, 3)
         .map(([_key, value], index) => (
           <Link key={index} href={`/catalog/product/${value.id}`} style={{ textDecoration: "none" }}>
-            <CardProduct title={value.name} txt={value.description} product={value} />
+            <CardProduct product={value} />
           </Link>
         ))}
-    </Group>
+    </Flex>
     <Link href="/catalog">
       <Button color="orange" w="fit-content">
         Découvrir + de produit {'->'}
@@ -34,7 +35,7 @@ export const LayoutProduct = () => (
   </Stack>
 );
 
-const CardProduct = ({ title, txt, product }: CardProps & { title: string; txt: string; product: any }) => (
+const CardProduct = ({ product }: CardProps & { product: Product }) => (
   <Card
     w="100%"
     style={{ overflow: 'hidden' }}
@@ -45,15 +46,15 @@ const CardProduct = ({ title, txt, product }: CardProps & { title: string; txt: 
     itemType="https://schema.org/Product"
   >
     <CardSection>
-      <Image src={MonImage} component={NextImage} alt={title} h={300} loading="lazy" itemProp="image" />
+      <Image src={product.cover} component={NextImage} alt={product.alt} h={300} height={300} loading="lazy" itemProp="image" />
     </CardSection>
     <Box p="md" td="none">
-      <Title order={2} td="none" itemProp="name">{title}</Title>
-      <Text lineClamp={3} itemProp="description">{txt}</Text>
+      <Title order={2} td="none" itemProp="name">{product.name}</Title>
+      <Text lineClamp={3} itemProp="description">{product.description}</Text>
       <meta itemProp="url" content={`/catalog/product/${product.id}`} />
       <meta itemProp="sku" content={product.id} />
       <meta itemProp="priceCurrency" content="EUR" />
-      <meta itemProp="price" content={product.price} />
+      <meta itemProp="price" content={product.price.toString()} />
     </Box>
   </Card>
 );

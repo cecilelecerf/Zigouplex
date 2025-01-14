@@ -1,9 +1,11 @@
 import { StaticImageData } from 'next/image';
 import MonImage from '../../components/assets/image.png';
 import endurance from '../../components/assets/product/Endurance_Gel.webp';
+import infinity from '../../components/assets/product/Zigouplex Infinity Gummies.webp';
+import nightShot from '../../components/assets/product/Zigouplex NightShot.webp';
 import classique from '../../components/assets/product/Zigouplex_Classique.webp';
 
-interface Product {
+export interface Product {
   id: string;
   cover: StaticImageData;
   name: string;
@@ -201,7 +203,7 @@ export const products: Product[] = [
   {
     id: '1',
     name: 'Zigouplex Nightshot',
-    cover: MonImage,
+    cover: nightShot,
     theme: 'Solution instantanée et discrète pour les moments imprévus',
     price: 12,
     alt: 'Photo du produit',
@@ -274,7 +276,7 @@ export const products: Product[] = [
   {
     id: '3',
     name: 'Zigouplex Infinity Gummies',
-    cover: MonImage,
+    cover: infinity,
     theme: 'Une cure fun et gourmande pour des résultats progressifs',
     price: 10,
     alt: 'Photo du produit',
