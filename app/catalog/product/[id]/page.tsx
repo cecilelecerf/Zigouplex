@@ -26,8 +26,8 @@ import {
 import { products } from '../../../../components/data/product';
 import { testimonials } from '../../../../components/data/testimonials';
 
-export type PageProps = {
-  params: { id: string, topic: string }
+export interface PageProps {
+  params: Promise<{ id: string; topic: string }>;
 }
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function Product({ params }: { params: { id: string } }) {
+export default async function Product({ params }: PageProps) {
   const { id } = await params;
   if (!id || isNaN(Number(id))) {
     return <Text c="red" size="xl">Produit non trouvé. Veuillez vérifier l'URL.</Text>;
