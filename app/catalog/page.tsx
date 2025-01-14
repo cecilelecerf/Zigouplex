@@ -11,11 +11,8 @@ import {
   Title,
 } from '@mantine/core';
 import { boxs, products } from '../../components/data/product';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'test',
-};
+
 
 export default function Catalog() {
   return (
