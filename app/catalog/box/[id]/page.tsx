@@ -1,54 +1,87 @@
 'use client';
-// Marque le fichier comme un composant client
+
 import NextImage from 'next/image';
-import { Box, Card, Center, Group, Image, SimpleGrid, Space, Stack, Text, Title, useMantineTheme } from '@mantine/core';
+import {
+  Box,
+  Card,
+  Center,
+  Group,
+  Image,
+  SimpleGrid,
+  Space,
+  Stack,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import { boxs } from '../../../../components/data/product';
 import { useParams } from 'next/navigation';
 
 export default function Product() {
-  const params = useParams();
-  const { id } = params;
+  const { id } = useParams();
 
-  if (id && typeof id === "string") {
-    const box = boxs[Number(id)]
-    const theme = useMantineTheme()
-
-    return (
-      <>
-        <Stack align="center">
-          <Title ta="center">
-            <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-              {box.name}
-            </Text>
-          </Title>
-          {box.slogan && (
-            <Text maw={600} ta="center">
-              {box.slogan}
-            </Text>
-
-          )}
-        </Stack>
-        <Space h="75" />
-        <Image src={box.cover} component={NextImage} alt='lal' style={{ borderRadius: theme.radius.md }} loading="lazy" />
-        <Space h="75" />
-        <Box>
-          <Title order={2} my="md">Inclut dans la box</Title>
-          <Center>
-
-            <Group gap="md" >
-              {box.contenu.map((content, i) =>
-                <Card key={i} shadow="md" maw={500} w="100%">
-                  <Text fw="bold" fz="xl">{content.name}</Text>
-                  <Text>{content.description}</Text>
-                </Card>)}
-
-            </Group>
-          </Center>
-        </Box>
-      </>
-    );
+  // Vérifie si l'ID est valide
+  if (!id || isNaN(Number(id))) {
+    return <>Erreur : Box non trouvée.</>;
   }
-  else {
-    return (<>Erro</>)
-  }
+
+  const box = boxs[Number(id)];
+  const theme = useMantineTheme();
+
+  return (
+    <div itemScope itemType="https://schema.org/Product">
+      {/* Titre de la box */}
+      <Stack align="center">
+        <Title ta="center">
+          <Text
+            inherit
+            variant="gradient"
+            component="span"
+            gradient={{ from: 'pink', to: 'yellow' }}
+            itemProp="name"
+          >
+            {box.name}
+          </Text>
+        </Title>
+        {box.slogan && (
+          <Text maw={600} ta="center" itemProp="slogan">
+            {box.slogan}
+          </Text>
+        )}
+      </Stack>
+
+      <Space h="75" />
+
+      {/* Image de la box */}
+      <Image
+        src={box.cover}
+        component={NextImage}
+        alt={box.name || 'Image de la box'}
+        style={{ borderRadius: theme.radius.md }}
+        loading="lazy"
+        itemProp="image"
+      />
+
+      <Space h="75" />
+
+      {/* Contenu de la box */}
+      <Box>
+        <Title order={2} my="md">
+          Inclut dans la box
+        </Title>
+        <Center>
+          <Group gap="md">
+            {box.contenu.map((content, i) => (
+              <Card key={i} shadow="md" maw={500} w="100%" itemScope itemType="https://schema.org/Offer">
+                <Text fw="bold" fz="xl" itemProp="name">
+                  {content.name}
+                </Text>
+                <Text itemProp="description">{content.description}</Text>
+              </Card>
+            ))}
+          </Group>
+        </Center>
+      </Box>
+    </div>
+  );
 }

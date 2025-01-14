@@ -11,34 +11,58 @@ export default function Product() {
     const { id, topic } = params;
     const { width } = useViewportSize();
 
-    if (id && typeof id === "string" && topic && typeof topic === "string") {
-        const article = blog[topic].articles[Number(id)]
+    if (id && typeof id === 'string' && topic && typeof topic === 'string') {
+        const article = blog[topic].articles[Number(id)];
 
         return (
-
             <>
-                <header>
-                    <Title order={1} ta="center" my="lg">
-                        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-                            {article.name}
-                        </Text>
-                    </Title>
-                    <Card shadow="md" w="fit-content" mx="auto">
-                        <Group gap="md" justify='center' w="fit-content" style={{ flexDirection: width > 950 ? "row" : "column" }}>
-                            <Image component={NextImage} src={article.picture} alt='la' maw={300} h={200} loading="lazy" />
-                            <Text component="p" p="md" w={width > 950 ? 500 : "100%"}>
-                                {article.description}
+                {/* Balise article avec les données Schema.org */}
+                <article itemScope itemType="https://schema.org/Article">
+                    <header>
+                        {/* Titre de l'article */}
+                        <Title order={1} ta="center" my="lg" itemProp="headline">
+                            <Text
+                                inherit
+                                variant="gradient"
+                                component="span"
+                                gradient={{ from: 'pink', to: 'yellow' }}
+                            >
+                                {article.name}
                             </Text>
-                        </Group>
-                    </Card>
-                </header>
+                        </Title>
 
-                {article.content}
+                        {/* Carte contenant l'image et la description */}
+                        <Card shadow="md" w="fit-content" mx="auto">
+                            <Group
+                                gap="md"
+                                justify="center"
+                                w="fit-content"
+                                style={{
+                                    flexDirection: width > 950 ? 'row' : 'column',
+                                }}
+                            >
+                                <Image
+                                    component={NextImage}
+                                    src={article.picture}
+                                    alt={article.name || 'Image de l’article'}
+                                    maw={300}
+                                    h={200}
+                                    loading="lazy"
+                                    itemProp="image"
+                                />
+                                <Text component="p" p="md" w={width > 950 ? 500 : '100%'} itemProp="description">
+                                    {article.description}
+                                </Text>
+                            </Group>
+                        </Card>
+                    </header>
+
+                    {/* Contenu de l'article */}
+                    <div itemProp="articleBody">{article.content}</div>
+                </article>
             </>
-
         );
-    }
-    else {
-        return (<>Error</>)
+    } else {
+        return <>Error</>;
     }
 }

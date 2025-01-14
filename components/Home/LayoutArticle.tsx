@@ -13,32 +13,34 @@ export const LayoutArticle = ({ article }: { article: Article }) => (
           shadow="sm"
           p="md"
           c="dark"
+          itemScope
+          itemType="https://schema.org/Article"
         >
           <Group align='center'>
             <Image
               src={article.picture}
               component={NextImage}
-              alt="lala"
+              alt={article.name}
               h={300}
               w="100%"
               fit="cover"
               radius="sm"
               mr="lg"
               loading="lazy"
-
+              itemProp="image"
             />
 
             <Box maw={400}>
-              <Title order={3}>{article.name}</Title>
-              <Text lineClamp={4}>{article.description}</Text>
+              <Title order={3} itemProp="headline">{article.name}</Title>
+              <Text lineClamp={4} itemProp="description">{article.description}</Text>
             </Box>
           </Group>
         </Paper>
       </Link>
+
       <Link href="/blog">
         <Button color='orange'>Découvrir + d'article</Button>
       </Link>
     </Stack>
-
-  </section >
+  </section>
 );
