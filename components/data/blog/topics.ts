@@ -5,6 +5,16 @@ import { IntimacyAfterParenthood } from './articles/couple/IntimacyAfterParentho
 import { JealousyAndTrust } from './articles/couple/JealousyAndTrust';
 import { RekindleFlameCouple } from './articles/couple/RekindleFlameCouple';
 import { TroublesErectilesCouple } from './articles/couple/TroublesErectilesCouple';
+import { ConfidenceAndPerformance } from './articles/maleVitalityConfidence/ConfidenceAndPerformance';
+import { ConfidenceAndSexualHealth } from './articles/maleVitalityConfidence/ConfidenceAndSexualHealth';
+import { EnduranceAndResilience } from './articles/maleVitalityConfidence/EnduranceAndResilience';
+import { ExerciseAndSexualHealth } from './articles/maleVitalityConfidence/ExerciseAndSexualHealth';
+import { HormonalBalanceAndSexualHealth } from './articles/maleVitalityConfidence/HormonalBalanceAndSexualHealth';
+import { LocalSolutionsForEndurance } from './articles/maleVitalityConfidence/LocalSolutionsForEndurance';
+import { NutritionAndSexualHealth } from './articles/maleVitalityConfidence/NutritionAndSexualHealth';
+import { SleepAndSexualPerformance } from './articles/maleVitalityConfidence/SleepAndSexualPerformance';
+import { VitalityBoost } from './articles/maleVitalityConfidence/VitalityBoost';
+import { ZigouplexRoutine } from './articles/maleVitalityConfidence/ZigouplexRoutine';
 import { AnxietyAndIntimac } from './articles/mentalHealth/AnxietyAndIntimacy';
 import { DepressionAndLibido } from './articles/mentalHealth/DepressionAndLibido';
 import { MentalHealthandSexualLifeinYoungMen } from './articles/mentalHealth/MentalHealthandSexualLifeinYoungMen';
@@ -81,6 +91,21 @@ export const blog: Record<string, Blog> = {
       MeditationForEveryone,
       PowerOfSleep,
       ReconnectWithYourself,
+    ],
+  },
+  maleVitalityConfidence: {
+    topic: 'Vitalité et Confiance Masculine',
+    articles: [
+      ConfidenceAndPerformance,
+      ConfidenceAndSexualHealth,
+      EnduranceAndResilience,
+      ExerciseAndSexualHealth,
+      HormonalBalanceAndSexualHealth,
+      LocalSolutionsForEndurance,
+      NutritionAndSexualHealth,
+      SleepAndSexualPerformance,
+      VitalityBoost,
+      ZigouplexRoutine,
     ],
   },
 };
