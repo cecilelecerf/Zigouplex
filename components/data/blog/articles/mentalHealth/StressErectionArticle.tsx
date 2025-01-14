@@ -7,6 +7,8 @@ export const StressErectionArticle: Article = {
     id: 2,
     name: 'Stress et érection : comment briser le cercle vicieux avec Zigouplex',
     picture: MonImage,
+    metaTitle: 'Stress et Érection : Comment Briser le Cercle Vicieux avec Zigouplex',
+    metaDescription: 'Découvrez comment le stress impacte la fonction érectile et explorez des méthodes pour briser ce cercle vicieux, incluant l\'utilisation de Zigouplex pour améliorer votre bien-être intime.',
     description: `Le stress est un ennemi silencieux de la fonction érectile, entraînant une spirale de frustration et d’anxiété. Cet article vous aide à comprendre les mécanismes physiologiques qui lient le stress à des troubles de l’érection, et vous propose des méthodes pratiques pour sortir de ce cercle vicieux, incluant l'utilisation de Zigouplex pour améliorer votre bien-être intime.`,
     content: (
         <Container component="article" size="md" p="md">

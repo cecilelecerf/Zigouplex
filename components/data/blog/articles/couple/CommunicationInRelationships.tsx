@@ -7,6 +7,8 @@ export const CommunicationInRelationships: Article = {
     id: 2,
     name: "L'importance de la communication dans les relations : Clés pour réussir",
     picture: MonImage,
+    metaTitle: "L'importance de la communication dans les relations : Clés pour réussir",
+    metaDescription: "Découvrez pourquoi la communication est essentielle dans une relation saine et durable. Apprenez des stratégies pratiques pour améliorer vos échanges, renforcer la confiance, résoudre les conflits et approfondir les liens émotionnels avec vos proches.",
     description: `La communication est le pilier de toute relation saine. Cet article explore pourquoi elle est essentielle et propose des conseils pratiques pour améliorer vos échanges avec vos proches.`,
 
     content: (

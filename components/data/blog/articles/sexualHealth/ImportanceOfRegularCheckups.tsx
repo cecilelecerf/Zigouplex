@@ -8,7 +8,8 @@ export const ImportanceOfRegularCheckups: Article = {
     name: "L'importance des bilans de santé réguliers : Pourquoi les check-ups sont essentiels",
     picture: MonImage,
     description: `Les bilans de santé réguliers sont cruciaux pour maintenir une bonne santé. Cet article explore pourquoi ils sont essentiels et propose des conseils pour bien les planifier.`,
-
+    metaTitle: "L'importance des bilans de santé réguliers : Pourquoi les check-ups sont essentiels",
+    metaDescription: "Les bilans de santé réguliers sont cruciaux pour maintenir une bonne santé. Cet article explore pourquoi ils sont essentiels et propose des conseils pour bien les planifier.",
     content: (
         <Container component="article" size="md" p="md">
             {/* Section : Pourquoi les bilans de santé réguliers sont essentiels */}

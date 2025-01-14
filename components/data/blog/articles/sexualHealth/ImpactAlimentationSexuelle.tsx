@@ -7,6 +7,8 @@ export const ImpactAlimentationSexuelle: Article = {
     name: 'L\'Impact de l\'Alimentation sur la Santé Sexuelle : Privilégier le Zigouplex pour une Vie Épanouie',
     description: <>L'alimentation joue un rôle essentiel dans notre bien-être global, et plus particulièrement dans notre vie sexuelle. Découvrez comment les bons choix alimentaires peuvent dynamiser votre libido et améliorer vos performances, avec une attention spéciale au super-aliment <Text span fw="bold">Zigouplex</Text>.</>,
     picture: MonImage,
+    metaTitle: "L'Impact de l'Alimentation sur la Santé Sexuelle : Privilégier le Zigouplex pour une Vie Épanouie",
+    metaDescription: "Découvrez comment les bons choix alimentaires, avec une attention particulière au super-aliment Zigouplex, peuvent dynamiser votre libido et améliorer vos performances pour une vie sexuelle épanouie.",
     content: (
         <Container component="article" size="md" p="md">
             <Divider my="xl" />

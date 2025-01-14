@@ -10,6 +10,8 @@ export const MentalHealthandSexualLifeinYoungMen: Article = {
         transformant un moment censé être de plaisir et de connexion en une source de stress
         intense. L’anxiété de performance, ce trouble qui touche de nombreuses personnes, n’est pas`,
   picture: MonImage,
+  metaTitle: 'Santé Mentale et Vie Sexuelle chez les Jeunes Hommes : Comprendre le Lien',
+  metaDescription: 'Dans cet article, nous explorons comment l\'anxiété de performance peut affecter l\'intimité des jeunes hommes et offrons des conseils pratiques pour surmonter ce défi.',
   content: (
     <Container component="article" size="md" p="md">
       <Divider my="xl" />

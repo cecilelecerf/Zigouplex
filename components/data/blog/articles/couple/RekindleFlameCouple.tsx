@@ -7,6 +7,8 @@ export const RekindleFlameCouple: Article = {
     name: 'Raviver la Flamme au Sein du Couple : 5 Astuces pour Renouveler le Désir Sexuel',
     description: `Ah, l’amour… C’est un peu comme un bon vin naturel, ça se bonifie avec le temps, mais parfois il faut lui redonner un coup de frais, n'est-ce pas ? La routine peut s'installer, et bien que le quotidien parisien soit déjà assez excitant, il est facile de laisser la passion s'évaporer. Pourtant, pas de panique : raviver la flamme est tout à fait possible. Il suffit de quelques ajustements et d’une petite dose de créativité pour réanimer le désir. Laissez-moi vous emmener dans un voyage où le désir se renouvelle et où l’envie se réveille, tout en restant authentique et sans pression. Voici cinq astuces pour redonner du souffle à votre vie sexuelle et raviver la flamme.`,
     picture: MonImage,
+    metaTitle: "Raviver la Flamme au Sein du Couple : 5 Astuces pour Renouveler le Désir Sexuel",
+    metaDescription: "Découvrez 5 astuces simples et créatives pour raviver la passion dans votre couple. De la communication à l'exploration sensorielle, apprenez comment réanimer le désir sexuel et renforcer votre complicité, avec une touche de naturel grâce à Zigouplex.",
     content: (
         <Container component="article" size="md" p="md">
             <List type="ordered"

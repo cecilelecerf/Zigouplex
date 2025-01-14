@@ -7,6 +7,8 @@ export const TroublesErectilesCouple: Article = {
     name: 'Les Troubles Érectiles : Quand l’Intimité du Couple en Souffre',
     description: `Les troubles érectiles touchent un nombre important d'hommes, mais leur impact ne se limite pas seulement à la performance physique. Que l’on soit dans une relation hétéronormée ou homosexuelle, les conséquences de ce problème de santé vont bien au-delà du simple dysfonctionnement sexuel. En fait, elles pénètrent souvent dans l’intimité et la dynamique émotionnelle du couple, parfois en s’installant insidieusement et durablement. Comment ces troubles affectent-ils les relations amoureuses ? Et surtout, quelles solutions existent pour les surmonter, comme Zigouplex ?`,
     picture: MonImage,
+    metaTitle: "Les Troubles Érectiles : Quand l’Intimité du Couple en Souffre",
+    metaDescription: "Les troubles érectiles touchent un grand nombre d'hommes, affectant non seulement la performance physique, mais aussi l'intimité et la dynamique émotionnelle du couple. Découvrez comment ces troubles impactent les relations amoureuses et quelles solutions existent pour les surmonter, comme Zigouplex.",
     content: (
         <Container component="article" size="md" p="md">
             <Divider my="xl" />

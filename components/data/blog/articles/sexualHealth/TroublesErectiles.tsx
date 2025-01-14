@@ -7,6 +7,8 @@ export const TroublesErectiles: Article = {
     name: 'Les Troubles Érectiles : Mythes, Réalités et Zigouplex',
     description: <>Les troubles érectiles touchent un grand nombre d'hommes, mais leur impact ne se limite pas à la performance physique. D'autres facteurs, souvent ignorés, sont à l'origine de ces problèmes. Aujourd’hui, on explore ces causes inattendues et comment le <Text span fw="bold">Zigouplex</Text> pourrait bien avoir un rôle à jouer dans l'équation.</>,
     picture: MonImage,
+    metaTitle: 'Les Troubles Érectiles : Mythes, Réalités et Zigouplex',
+    metaDescription: 'Les troubles érectiles touchent un grand nombre d\'hommes, mais leur impact ne se limite pas à la performance physique. D\'autres facteurs, souvent ignorés, sont à l\'origine de ces problèmes. Aujourd\'hui, on explore ces causes inattendues et comment le Zigouplex pourrait bien avoir un rôle à jouer dans l\'équation.',
     content: (
         <Container component="article" size="md" p="md">
             <Divider my="xl" />

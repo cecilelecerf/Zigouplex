@@ -8,6 +8,9 @@ export const DepressionAndLibido: Article = {
     name: 'Dépression et Libido : Le Combat des Sens, ou Comment Retrouver l’Équilibre',
     description: `Ah, la dépression... ce n’est pas juste un petit coup de blues, mais une tempête intérieure qui engloutit tout, y compris notre libido. Pourtant, ce sujet est bien souvent évité, presque tabou. Pourtant, comprendre comment la dépression perturbe non seulement notre esprit, mais aussi notre désir sexuel, est crucial. Si vous êtes en quête de réponses et de solutions subtiles, cet article est pour vous.`,
     picture: MonImage,
+    metaTitle: "Dépression et Libido : Le Combat des Sens, ou Comment Retrouver l’Équilibre",
+    metaDescription: "La dépression a un impact significatif sur la libido, perturbant les désirs et la sensualité. Cet article explore les effets de la dépression sur la libido et propose des solutions pour retrouver l'équilibre, avec des conseils sur les traitements, la communication dans le couple, et des suggestions naturelles pour raviver le désir.",
+
     content: (
         <Container component="article" size="md" p="md">
             <Divider my="xl" />

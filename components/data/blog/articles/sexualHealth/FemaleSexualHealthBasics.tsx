@@ -9,7 +9,8 @@ export const FemaleSexualHealthBasics: Article = {
     name: "Les bases de la santé sexuelle féminine : Comprendre et prendre soin de soi",
     picture: MonImage,
     description: `La santé sexuelle féminine est essentielle pour le bien-être général. Cet article explore les bases de cette santé et propose des conseils pour la maintenir.`,
-
+    metaTitle: 'Les bases de la santé sexuelle féminine : Comprendre et prendre soin de soi',
+    metaDescription: 'Découvrez les bases de la santé sexuelle féminine et apprenez à maintenir un bien-être intime optimal avec des conseils pratiques et des recommandations pour prendre soin de soi.',
     content: (
         <Container component="article" size="md" p="md">
             {/* Section : Pourquoi la santé sexuelle féminine est importante */}

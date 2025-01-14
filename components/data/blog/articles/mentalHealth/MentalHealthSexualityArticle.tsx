@@ -7,6 +7,8 @@ export const MentalHealthSexualityArticle: Article = {
   id: 0,
   name: 'Santé Mentale et Vie Sexuelle chez les Jeunes Hommes : Un Lien Trop Souvent Ignoré',
   picture: MonImage,
+  metaTitle: 'Santé Mentale et Vie Sexuelle chez les Jeunes Hommes : Un Lien Souvent Négligé',
+  metaDescription: 'Cet article explore comment les pressions sociales, l\'anxiété et la dépression influencent la sexualité des jeunes hommes, et propose des solutions pour restaurer l\'équilibre et la confiance.',
   description: `La santé mentale et la vie sexuelle des jeunes hommes sont étroitement liées, mais souvent ignorées ou mal comprises. Cet article explore comment les pressions sociales, l'anxiété et la dépression influencent la sexualité et la confiance. Il vous guide à travers des solutions pour rétablir l'équilibre, en vous encourageant à parler ouvertement de vos émotions et à aborder ces sujets essentiels pour une vie sexuelle épanouie.`,
   content: (
     <Container component="article" size="md" p="md">

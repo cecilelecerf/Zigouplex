@@ -7,6 +7,8 @@ export const IntimacyAfterParenthood: Article = {
     id: 4,
     name: "Retrouver l'intimité après la parentalité : Défis et solutions",
     picture: MonImage,
+    metaTitle: "Retrouver l'intimité après la parentalité : Défis et solutions",
+    metaDescription: "Découvrez comment la parentalité peut affecter l'intimité et apprenez des stratégies pour raviver votre connexion émotionnelle et physique. Explorez des conseils pratiques pour retrouver l'équilibre dans votre relation après l'arrivée d'un enfant.",
     description: `Devenir parent est une expérience transformative, mais cela peut aussi affecter l'intimité entre partenaires. Cet article explore les défis rencontrés après la parentalité et propose des solutions pour retrouver une connexion émotionnelle et physique.`,
 
     content: (

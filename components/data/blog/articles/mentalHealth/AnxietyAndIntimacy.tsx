@@ -7,6 +7,9 @@ export const AnxietyAndIntimac: Article = {
     id: 4,
     name: " L'impact de l'anxiété sur l'intimité : Causes et solutions",
     picture: MonImage,
+    metaTitle: "L'impact de l'anxiété sur l'intimité : Causes et solutions",
+    metaDescription: "L'anxiété peut affecter profondément l'intimité, entraînant des problèmes de désir sexuel, de communication et des troubles physiques. Découvrez des solutions efficaces pour surmonter ces défis, comme la thérapie cognitivo-comportementale et les techniques de relaxation, pour restaurer une vie intime épanouie.",
+
     description: `L'anxiété est une réalité courante qui peut affecter divers aspects de notre vie, y compris nos relations intimes. Cet article explore comment l'anxiété influence l'intimité et propose des solutions pour surmonter ces défis.`,
 
     content: (

@@ -8,7 +8,8 @@ export const OvercomingSexualTrauma: Article = {
     name: "Surmonter les traumatismes sexuels : Un chemin vers la guérison",
     picture: MonImage,
     description: `Les traumatismes sexuels peuvent laisser des blessures profondes qui affectent à la fois le corps et l'esprit. Cet article explore les défis auxquels font face les survivants et propose des stratégies pour les aider dans leur parcours de guérison.`,
-
+    metaTitle: 'Surmonter les Traumatismes Sexuels : Un Chemin vers la Guérison',
+    metaDescription: 'Cet article explore les défis des survivants de traumatismes sexuels et propose des stratégies pour les aider à se reconstruire et à retrouver leur bien-être.',
     content: (
         <Container component="article" size="md" p="md">
             {/* Section : Comprendre les traumatismes sexuels */}

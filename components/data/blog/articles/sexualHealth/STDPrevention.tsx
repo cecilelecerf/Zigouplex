@@ -8,7 +8,8 @@ export const STDPrevention: Article = {
     name: "Prévention des IST : Clés pour protéger votre santé",
     picture: MonImage,
     description: `La prévention des infections sexuellement transmissibles (IST) est essentielle pour maintenir une bonne santé sexuelle. Cet article explore les meilleures pratiques pour réduire le risque d'IST et protéger votre bien-être.`,
-
+    metaTitle: "Prévention des IST : Clés pour protéger votre santé",
+    metaDescription: "La prévention des infections sexuellement transmissibles (IST) est essentielle pour maintenir une bonne santé sexuelle. Cet article explore les meilleures pratiques pour réduire le risque d'IST et protéger votre bien-être.",
     content: (
         <Container component="article" size="md" p="md">
             {/* Section : Pourquoi prévenir les IST */}

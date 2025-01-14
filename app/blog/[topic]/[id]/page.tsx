@@ -5,9 +5,47 @@ import { Text, Title, Image, Flex, Paper, Group, Card } from '@mantine/core';
 import { useParams } from 'next/navigation';
 import { blog } from '../../../../components/data/blog//topics';
 import { useViewportSize } from '@mantine/hooks';
+import { PageProps } from '@/app/catalog/product/[id]/page';
 
-export default function Product() {
-    const params = useParams();
+export async function generateMetadata({ params }: PageProps) {
+    const { id, topic } = params;
+
+    // Vérifie si l'ID est valide et récupère les informations du produit
+    if (!id || isNaN(Number(id))) {
+        return {
+            title: 'Article non trouvé',
+            openGraph: {
+                title: 'Article non trouvé',
+                description: 'Article introuvable dans notre base de données.',
+            },
+        };
+    }
+
+    const article = blog[topic].articles[Number(id)];
+
+    if (!article) {
+        return {
+            title: 'Produit non trouvé',
+            openGraph: {
+                title: 'Produit non trouvé',
+                description: 'Produit introuvable dans notre base de données.',
+            },
+        };
+    }
+
+    // Métadonnées dynamiques basées sur le produit
+    return {
+        title: article.metaTitle || article.name,
+        description: article.metaDescription || article.description,
+        openGraph: {
+            title: article.metaTitle || article.name,
+            description: article.metaDescription || article.description,
+        },
+    };
+}
+
+export default function Product({ params }: PageProps) {
+
     const { id, topic } = params;
     const { width } = useViewportSize();
 

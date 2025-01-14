@@ -24,6 +24,8 @@ export interface Article {
   description: ReactNode;
   content: ReactNode;
   picture?: StaticImageData;
+  metaTitle: string;
+  metaDescription: string;
 }
 interface Blog {
   topic: string;

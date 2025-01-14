@@ -7,6 +7,8 @@ export const JealousyAndTrust: Article = {
     id: 3,
     name: "Jalousie et confiance : Trouver l'équilibre dans vos relations",
     picture: MonImage,
+    metaTitle: "Jalousie et confiance : Trouver l'équilibre dans vos relations",
+    metaDescription: "Explorez les causes de la jalousie dans les relations et découvrez des stratégies pour cultiver la confiance mutuelle. Apprenez à gérer les émotions complexes de la jalousie pour construire des relations plus équilibrées et harmonieuses.",
     description: `La jalousie est une émotion complexe qui peut mettre à mal la confiance dans une relation. Cet article explore les causes de la jalousie et propose des moyens de cultiver une confiance mutuelle.`,
 
     content: (

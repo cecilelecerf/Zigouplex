@@ -7,13 +7,13 @@ import { Nav } from '../components/ui/nav';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import Head from 'next/head';
-export const metadata = {
-  title: 'Acme',
-  openGraph: {
-    title: 'Acme',
-    description: 'Acme is a...',
-  },
-}
+// export const metadata = {
+//   title: 'Acme',
+//   openGraph: {
+//     title: 'Acme',
+//     description: 'Acme is a...',
+//   },
+// }
 type RootLayoutProps = {
   children: React.ReactNode;
   meta?: {

@@ -8,7 +8,8 @@ export const SelfEsteemAndSexuality: Article = {
     name: "L'estime de soi et la sexualité : Un lien essentiel",
     picture: MonImage,
     description: `L'estime de soi joue un rôle crucial dans nos relations intimes et dans notre manière d'aborder la sexualité. Découvrez comment ces deux aspects sont liés et comment améliorer votre confiance en soi pour une vie sexuelle épanouie.`,
-
+    metaTitle: 'L\'Estime de Soi et la Sexualité : Un Lien Essentiel',
+    metaDescription: 'Découvrez comment l\'estime de soi influence notre vie sexuelle et explorez des stratégies pour améliorer la confiance en soi et vivre une sexualité épanouie.',
     content: (
         <Container component="article" size="md" p="md">
             {/* Section : L'impact de l'estime de soi sur la sexualité */}

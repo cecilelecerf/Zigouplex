@@ -25,19 +25,49 @@ import {
 } from '@mantine/core';
 import { products } from '../../../../components/data/product';
 import { testimonials } from '../../../../components/data/testimonials';
-import Head from 'next/head';
-export const metadata = {
-  title: 'lala',
-  openGraph: {
-    title: 'Acme',
-    description: 'Acme is a...',
-  },
+
+export type PageProps = {
+  params: { id: string, topic: string }
 }
+export async function generateMetadata({ params }: PageProps) {
+  const { id } = params;
+
+  // Vérifie si l'ID est valide et récupère les informations du produit
+  if (!id || isNaN(Number(id))) {
+    return {
+      title: 'Produit non trouvé',
+      openGraph: {
+        title: 'Produit non trouvé',
+        description: 'Produit introuvable dans notre base de données.',
+      },
+    };
+  }
+
+  const product = products[Number(id)];
+
+  if (!product) {
+    return {
+      title: 'Produit non trouvé',
+      openGraph: {
+        title: 'Produit non trouvé',
+        description: 'Produit introuvable dans notre base de données.',
+      },
+    };
+  }
+
+  // Métadonnées dynamiques basées sur le produit
+  return {
+    title: product.metaTitle || product.name,
+    description: product.metaDescription || product.description,
+    openGraph: {
+      title: product.metaTitle || product.name,
+      description: product.metaDescription || product.description,
+    },
+  };
+}
+
 export default async function Product({ params }: { params: { id: string } }) {
   const { id } = await params;
-
-
-  // Vérifie si l'ID est valide
   if (!id || isNaN(Number(id))) {
     return <Text c="red" size="xl">Produit non trouvé. Veuillez vérifier l'URL.</Text>;
   }
@@ -81,11 +111,7 @@ export default async function Product({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <Head>
-        <title>{product.metaTitle || product.name}</title>
-        <meta name="description" content={product.metaDescription || product.description} />
-        <meta name="keywords" content="complément alimentaire, performance masculine, libido, santé" />
-      </Head>
+
       <div itemScope itemType="https://schema.org/Product">
         <header>
           <Title ta="center" my={100}>
