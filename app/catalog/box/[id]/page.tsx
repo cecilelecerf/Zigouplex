@@ -53,14 +53,21 @@ export default function Product() {
       <Space h="75" />
 
       {/* Image de la box */}
-      <Image
-        src={box.cover}
-        component={NextImage}
-        alt={box.name || 'Image de la box'}
-        style={{ borderRadius: theme.radius.md }}
-        loading="lazy"
-        itemProp="image"
-      />
+      <Group gap="xl">
+        <Image
+          src={box.cover}
+          component={NextImage}
+          alt={'Image du produit'}
+          maw={300}
+          h={200}
+          loading="lazy"
+          itemProp="image"
+        />
+        <Stack maw={550}>
+          <Text itemProp="description">{box.description}</Text>
+
+        </Stack>
+      </Group>
 
       <Space h="75" />
 
