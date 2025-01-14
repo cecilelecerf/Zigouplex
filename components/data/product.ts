@@ -18,6 +18,8 @@ export interface Product {
   keyPoints: string[];
   price: number;
   alt: string;
+  metaTitle: string;
+  metaDescription: string;
 }
 
 interface KeyComposition {
@@ -167,6 +169,9 @@ export const products: Product[] = [
     description:
       'Zigouplex Classique est la version phare du produit, conçue pour offrir une solution fiable et efficace aux troubles érectiles. Présentée sous forme de comprimés ou de gélules, cette formule associe des ingrédients naturels et scientifiquement validés pour soutenir la circulation sanguine, stimuler la vitalité et améliorer les performances masculines, naturellement.',
     price: 10,
+    metaTitle: 'Zigouplex Classique - Améliorez votre vitalité et vos performances naturellement',
+    metaDescription:
+      'Découvrez Zigouplex Classique, la solution naturelle pour améliorer la circulation sanguine et stimuler la vitalité masculine. Formule éprouvée avec L-arginine, Ginseng et Maca, idéale pour un soutien quotidien sans effets secondaires.',
     keyComposition: [
       {
         ingredient: 'L-arginine',
@@ -207,6 +212,9 @@ export const products: Product[] = [
     theme: 'Solution instantanée et discrète pour les moments imprévus',
     price: 12,
     alt: 'Photo du produit',
+    metaTitle: 'Zigouplex Nightshot - Solution instantanée pour des performances immédiates',
+    metaDescription:
+      'Zigouplex Nightshot, une solution ultra-rapide sous forme de stick liquide pour des résultats immédiats. Parfait pour les moments imprévus, avec une absorption rapide et un effet boostant pour vous accompagner à tout moment.',
     description:
       'Une version sous forme de stick liquide (ou ampoule à boire) pour une absorption ultra-rapide et un effet en quelques minutes. Idéal pour des rendez-vous spontanés ou des moments où le timing est essentiel.',
     keyPoints: [
@@ -244,6 +252,9 @@ export const products: Product[] = [
     theme: 'Optimisation locale pour une performance maîtrisée',
     price: 15,
     alt: 'Photo du produit',
+    metaTitle: 'Zigouplex Endurance Gel - Pour des performances durables et efficaces',
+    metaDescription:
+      'Le Zigouplex Endurance Gel est conçu pour prolonger vos moments intimes et soutenir la vitalité masculine. Une application facile et rapide pour un effet durable, idéal pour les performances de longue durée.',
     description:
       'Une déclinaison sous forme de gel topique à appliquer directement avant l’acte. Ce produit agit localement pour stimuler la circulation sanguine et améliorer l’endurance tout en offrant des sensations amplifiées.',
     keyPoints: [
@@ -280,6 +291,9 @@ export const products: Product[] = [
     theme: 'Une cure fun et gourmande pour des résultats progressifs',
     price: 10,
     alt: 'Photo du produit',
+    metaTitle: 'Zigouplex Infinity Gummies - Performance et endurance à long terme',
+    metaDescription:
+      'Les Zigouplex Infinity Gummies offrent une solution gourmande pour améliorer vos performances et votre endurance. Profitez des bienfaits de cette formule pratique en gomme pour un soutien de la vitalité masculine au quotidien.',
     description:
       'Une version sous forme de gummies (bonbons gélifiés) enrichis en ingrédients naturels tels que le ginseng, le maca et la L-arginine, pour une prise quotidienne ludique et sans contrainte. Pensé pour les hommes qui préfèrent une approche légère et progressive.',
     keyPoints: [
