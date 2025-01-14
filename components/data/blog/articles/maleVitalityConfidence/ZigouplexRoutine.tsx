@@ -1,7 +1,7 @@
 import { Title, Text, Container, List, ThemeIcon, Divider, ListItem } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import { Article } from '../../topics';
-import MonImage from "../../../../assets/blog/maleVitalityConfidence/article_1.webp";
+import MonImage from "../../../../assets/blog/maleVitalityConfidence/article_10.webp";
 
 export const ZigouplexRoutine: Article = {
     id: 9,

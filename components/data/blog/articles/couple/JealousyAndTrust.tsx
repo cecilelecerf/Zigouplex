@@ -1,7 +1,7 @@
 import { Title, Text, Container, List, ThemeIcon, Divider, ListItem } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import { Article } from '../../topics';
-import MonImage from "../../../../assets/blog/sante_mentale/article_1.webp";
+import MonImage from "../../../../assets/blog/couple/article_4.webp";
 
 export const JealousyAndTrust: Article = {
     id: 3,

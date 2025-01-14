@@ -2,6 +2,7 @@ import '@mantine/core/styles.css';
 
 import React from 'react';
 import { Box, ColorSchemeScript, MantineProvider } from '@mantine/core';
+import logo from "../components/assets/logo.webp"
 import { theme } from '../theme';
 import { Nav } from '../components/ui/nav';
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -14,7 +15,7 @@ export const metadata = {
     title: "Zigouplex : Solution Naturelle Contre les Troubles d'Érection - Boostez Votre Vitalité et Performances",
     description: "Zigouplex offre une solution naturelle et efficace contre les troubles d’érection. Découvrez nos produits : Zigouplex Classique, Nightshot et Endurance Gel, pour améliorer la circulation sanguine, stimuler votre vitalité et renforcer vos performances masculines. Recommandé par des experts.",
     url: "https://www.zigouplex.shop/",
-    image: "URL_de_l_image.jpg",
+    image: logo,
     imageWidth: 1200,
     imageHeight: 630,
   },
@@ -33,7 +34,7 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en" suppressHydrationWarning>
       <Head>
         <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.webp" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

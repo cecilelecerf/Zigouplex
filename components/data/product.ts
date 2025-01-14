@@ -1,9 +1,12 @@
 import { StaticImageData } from 'next/image';
-import MonImage from '../../components/assets/image.png';
+import boost from '../../components/assets/product/box/Zigouplex_boostBox.webp';
+import performance from '../../components/assets/product/box/Zigouplex_performanceBox.webp';
+import sensation from '../../components/assets/product/box/Zigouplex_sensationBox.webp';
+import valentine from '../../components/assets/product/box/Zigouplex_valentineBox.webp';
 import endurance from '../../components/assets/product/Endurance_Gel.webp';
-import infinity from '../../components/assets/product/Zigouplex Infinity Gummies.webp';
-import nightShot from '../../components/assets/product/Zigouplex NightShot.webp';
 import classique from '../../components/assets/product/Zigouplex_Classique.webp';
+import infinity from '../../components/assets/product/Zigouplex_InfinityGummies.webp';
+import nightShot from '../../components/assets/product/Zigouplex_NightShot.webp';
 
 export interface Product {
   id: string;
@@ -27,11 +30,6 @@ interface KeyComposition {
   benefit: string;
 }
 
-interface Usage {
-  cure: string;
-  punctualEffect: string;
-}
-
 interface BoxContent {
   name: string;
   description: string;
@@ -50,7 +48,7 @@ export const boxs: Box[] = [
   {
     id: '0',
     name: 'Zigouplex Boost Box',
-    cover: MonImage,
+    cover: boost,
 
     description: 'Une box pour un coup de fouet instantané et une performance optimisée.',
     contenu: [
@@ -76,7 +74,7 @@ export const boxs: Box[] = [
   {
     id: '1',
     name: 'Zigouplex Performance Plus',
-    cover: MonImage,
+    cover: performance,
 
     description: 'Une version avancée pour des performances maximales sur le long terme.',
     contenu: [
@@ -98,7 +96,7 @@ export const boxs: Box[] = [
   {
     id: '2',
     name: 'Zigouplex Sensation Box (pour le couple)',
-    cover: MonImage,
+    cover: sensation,
 
     description: 'Une box axée sur le plaisir partagé et la redécouverte de l’intimité en duo.',
     contenu: [
@@ -124,7 +122,7 @@ export const boxs: Box[] = [
   {
     id: '3',
     name: 'Zigouplex Valentine Box',
-    cover: MonImage,
+    cover: valentine,
 
     description:
       'Une box romantique et sensuelle pour célébrer l’amour, raviver la passion et renforcer l’intimité du couple. Idéale pour la Saint-Valentin, elle allie performance et plaisir dans une expérience tout-en-un.',
