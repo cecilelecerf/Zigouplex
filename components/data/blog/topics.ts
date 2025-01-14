@@ -17,6 +17,12 @@ import { ImpactAlimentationSexuelle } from './articles/sexualHealth/ImpactAlimen
 import { ImportanceOfRegularCheckups } from './articles/sexualHealth/ImportanceOfRegularCheckups';
 import { STDPrevention } from './articles/sexualHealth/STDPrevention';
 import { TroublesErectiles } from './articles/sexualHealth/TroublesErectiles';
+import { MeditationForEveryone } from './articles/wellBeing/MeditationForEveryone';
+import { MindfulnessAndSexualIntimacy } from './articles/wellBeing/MindfulnessAndSexualIntimacy';
+import { PowerOfSleep } from './articles/wellBeing/PowerOfSleep';
+import { ReconnectWithYourself } from './articles/wellBeing/ReconnectWithYourself';
+import { SelfLoveAndConfidenceInSexuality } from './articles/wellBeing/SelfLoveAndConfidenceInSexuality';
+import { YogaForMentalAndSexualHealth } from './articles/wellBeing/YogaForMentalAndSexualHealth';
 
 export interface Article {
   id: number;
@@ -64,6 +70,17 @@ export const blog: Record<string, Blog> = {
       STDPrevention,
       ImportanceOfRegularCheckups,
       FemaleSexualHealthBasics,
+    ],
+  },
+  weelBeing: {
+    topic: 'Bien être',
+    articles: [
+      MindfulnessAndSexualIntimacy,
+      SelfLoveAndConfidenceInSexuality,
+      YogaForMentalAndSexualHealth,
+      MeditationForEveryone,
+      PowerOfSleep,
+      ReconnectWithYourself,
     ],
   },
 };

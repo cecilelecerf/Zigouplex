@@ -147,7 +147,7 @@ export const ImpactAlimentationSexuelle: Article = {
 
             <Divider my="xl" />
 
-            <section>
+            <footer>
                 <Title order={2} my="lg">
                     Conclusion : pour une vie sexuelle épanouie, il suffit de manger équilibré
                 </Title>
@@ -164,7 +164,7 @@ export const ImpactAlimentationSexuelle: Article = {
                 <Text>
                     En combinant alimentation équilibrée, hydratation, exercice et gestion du stress, vous avez la recette idéale pour une vie intime épanouie. Bon appétit, et que votre santé sexuelle vous en remercie !
                 </Text>
-            </section>
+            </footer>
         </Container>
     ),
 };
