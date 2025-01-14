@@ -91,14 +91,15 @@ export const ImportanceOfRegularCheckups: Article = {
             </List>
 
             <Divider my="lg" />
-
-            {/* Conclusion */}
-            <Title order={2} mb="sm">
-                Conclusion
-            </Title>
-            <Text component="p">
-                Les bilans de santé réguliers jouent un rôle crucial dans le maintien de votre santé à long terme. Ils vous permettent de prévenir des maladies graves et de prendre en charge votre santé avant que des problèmes ne surviennent. N'oubliez pas de planifier des check-ups réguliers et de discuter ouvertement avec votre médecin pour préserver votre bien-être.
-            </Text>
+            <footer>
+                {/* Conclusion */}
+                <Title order={2} mb="sm">
+                    Conclusion
+                </Title>
+                <Text component="p">
+                    Les bilans de santé réguliers jouent un rôle crucial dans le maintien de votre santé à long terme. Ils vous permettent de prévenir des maladies graves et de prendre en charge votre santé avant que des problèmes ne surviennent. N'oubliez pas de planifier des check-ups réguliers et de discuter ouvertement avec votre médecin pour préserver votre bien-être.
+                </Text>
+            </footer>
         </Container>
     )
 };

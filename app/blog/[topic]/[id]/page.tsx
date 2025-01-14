@@ -1,14 +1,11 @@
-'use client';
-// Marque le fichier comme un composant client
 import NextImage from 'next/image';
-import { Text, Title, Image, Flex, Paper, Group, Card } from '@mantine/core';
-import { useParams } from 'next/navigation';
+import { Text, Title, Image, Group, Card, Flex } from '@mantine/core';
 import { blog } from '../../../../components/data/blog//topics';
-import { useViewportSize } from '@mantine/hooks';
+// import { useViewportSize } from '@mantine/hooks';
 import { PageProps } from '@/app/catalog/product/[id]/page';
 
 export async function generateMetadata({ params }: PageProps) {
-    const { id, topic } = params;
+    const { id, topic } = await params;
 
     // Vérifie si l'ID est valide et récupère les informations du produit
     if (!id || isNaN(Number(id))) {
@@ -44,10 +41,10 @@ export async function generateMetadata({ params }: PageProps) {
     };
 }
 
-export default function Product({ params }: PageProps) {
+export default async function Product({ params }: PageProps) {
 
-    const { id, topic } = params;
-    const { width } = useViewportSize();
+    const { id, topic } = await params;
+    // const { width } = useViewportSize();
 
     if (id && typeof id === 'string' && topic && typeof topic === 'string') {
         const article = blog[topic].articles[Number(id)];
@@ -71,13 +68,11 @@ export default function Product({ params }: PageProps) {
 
                         {/* Carte contenant l'image et la description */}
                         <Card shadow="md" w="fit-content" mx="auto">
-                            <Group
+                            <Flex
                                 gap="md"
                                 justify="center"
                                 w="fit-content"
-                                style={{
-                                    flexDirection: width > 950 ? 'row' : 'column',
-                                }}
+                                direction={{ sm: 'row', base: 'column' }}
                             >
                                 <Image
                                     component={NextImage}
@@ -88,10 +83,10 @@ export default function Product({ params }: PageProps) {
                                     loading="lazy"
                                     itemProp="image"
                                 />
-                                <Text component="p" p="md" w={width > 950 ? 500 : '100%'} itemProp="description">
+                                <Text component="p" p="md" w={{ sm: 500, base: '100%' }} itemProp="description">
                                     {article.description}
                                 </Text>
-                            </Group>
+                            </Flex>
                         </Card>
                     </header>
 

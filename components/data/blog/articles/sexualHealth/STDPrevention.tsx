@@ -97,14 +97,15 @@ export const STDPrevention: Article = {
             </List>
 
             <Divider my="lg" />
-
-            {/* Conclusion */}
-            <Title order={2} mb="sm">
-                Conclusion
-            </Title>
-            <Text component="p">
-                La prévention des IST est essentielle pour maintenir une bonne santé sexuelle et protéger ses proches. En adoptant des pratiques comme l'utilisation systématique des préservatifs, les tests réguliers et la vaccination, vous pouvez réduire considérablement les risques. Protégez-vous et adoptez des comportements responsables pour un avenir sain.
-            </Text>
+            <footer>
+                {/* Conclusion */}
+                <Title order={2} mb="sm">
+                    Conclusion
+                </Title>
+                <Text component="p">
+                    La prévention des IST est essentielle pour maintenir une bonne santé sexuelle et protéger ses proches. En adoptant des pratiques comme l'utilisation systématique des préservatifs, les tests réguliers et la vaccination, vous pouvez réduire considérablement les risques. Protégez-vous et adoptez des comportements responsables pour un avenir sain.
+                </Text>
+            </footer>
         </Container>
     )
 };

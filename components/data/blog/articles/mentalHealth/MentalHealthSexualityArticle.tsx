@@ -70,7 +70,7 @@ export const MentalHealthSexualityArticle: Article = {
       <Divider my="xl" />
 
       <footer>
-        <Text ta="center" w={600}>
+        <Text ta="center"  >
           En conclusion : parler de santé mentale et sexuelle est essentiel pour dénouer les tabous et encourager des relations saines et équilibrées.
         </Text>
         <Text ta="center" size="sm" color="dimmed">

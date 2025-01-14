@@ -116,14 +116,14 @@ export const TroublesErectiles: Article = {
 
             <Divider my="xl" />
 
-            <section>
+            <footer>
                 <Title order={2} my="lg">
                     Un Regard Lucide pour Avancer
                 </Title>
                 <Text>
                     Il est temps d'abandonner la honte et de comprendre les troubles érectiles pour mieux les surmonter. En brisant les mythes et en cherchant de l'aide, vous pouvez renouer avec une vie intime épanouie. <Text span fw="bold">Zigouplex</Text>, c’est une solution naturelle qui pourrait bien jouer un rôle crucial dans cette transformation.
                 </Text>
-            </section>
+            </footer>
         </Container>
     ),
 };

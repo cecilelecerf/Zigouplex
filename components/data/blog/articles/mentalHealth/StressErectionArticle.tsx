@@ -110,7 +110,7 @@ export const StressErectionArticle: Article = {
             <Divider my="xl" />
 
             <footer>
-                <Text ta="center" w={600}>
+                <Text ta="center"  >
                     En agissant sur les causes profondes du stress et en changeant votre regard sur la performance, vous pouvez inverser la tendance. Considérez l’utilisation de Zigouplex pour soutenir votre démarche.
                 </Text>
                 <Text ta="center" size="sm" color="dimmed">

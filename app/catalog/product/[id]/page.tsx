@@ -30,7 +30,7 @@ export type PageProps = {
   params: { id: string, topic: string }
 }
 export async function generateMetadata({ params }: PageProps) {
-  const { id } = params;
+  const { id } = await params;
 
   // Vérifie si l'ID est valide et récupère les informations du produit
   if (!id || isNaN(Number(id))) {
